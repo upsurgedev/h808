@@ -1,3 +1,11 @@
+# Redirect old service page slugs to new canonical URLs
+/exterior-painting-honolulu /services/exterior-painting 301
+/interior-painting-honolulu-services /services/interior-painting 301
+/residential-painting-honolulu /services/residential-painting 301
+/commercial-painting-honolulu /services/commercial-painting 301
+/cabinet-painting-honolulu /services/cabinet-painting 301
+/drywall-repair-honolulu /services/drywall 301
+
 # Redirect old service-areas slugs to canonical painter pages
 /service-areas/honolulu /painters-honolulu-hi 301
 /service-areas/kailua /painters-kailua-hi 301
