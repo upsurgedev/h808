@@ -9,20 +9,20 @@ const serviceLinks = [
 ];
 
 const areaLinks = [
-  { label: "Honolulu", href: "/service-areas/honolulu" },
-  { label: "Pearl City", href: "/service-areas/pearl-city" },
-  { label: "Kaneohe", href: "/service-areas/kaneohe" },
-  { label: "Kailua", href: "/service-areas/kailua" },
-  { label: "Waipahu", href: "/service-areas/waipahu" },
-  { label: "Mililani", href: "/service-areas/mililani" },
-  { label: "Kapolei", href: "/service-areas/kapolei" },
-  { label: "Ewa Beach", href: "/service-areas/ewa-beach" },
-  { label: "Waianae", href: "/service-areas/waianae" },
-  { label: "Makaha", href: "/service-areas/makaha" },
+  { label: "Honolulu", href: "/painters-honolulu-hi" },
+  { label: "Pearl City", href: "/painters-pearl-city-hi" },
+  { label: "Kaneohe", href: "/painters-kaneohe-hi" },
+  { label: "Kailua", href: "/painters-kailua-hi" },
+  { label: "Waipahu", href: "/painters-waipahu-hi" },
+  { label: "Mililani", href: "/painters-mililani-hi" },
+  { label: "Kapolei", href: "/painters-kapolei-hi" },
+  { label: "Ewa Beach", href: "/painters-ewa-beach-hi" },
+  { label: "Hawaii Kai", href: "/painters-hawaii-kai-hi" },
+  { label: "North Shore", href: "/painters-north-shore-hi" },
 ];
 
 const companyLinks = [
-  { label: "About Lopaka", href: "/about" },
+  { label: "About Us", href: "/about" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
   { label: "Get Free Quote", href: "/contact" },
@@ -44,7 +44,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-5">
-              Locally owned by Lopaka. Serving Honolulu and all of Oʻahu since 2012. Licensed, insured, and built on honest work done with pride.
+              Locally owned and operated. Serving Honolulu and all of Oʻahu since 2012. Licensed, insured, and built on honest work done with pride.
             </p>
 
           </div>
