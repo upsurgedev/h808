@@ -29,6 +29,7 @@ const BUDGET_RANGES = [
 type Step =
   | "service"
   | "property"
+  | "address"
   | "urgency"
   | "urgency_followup"
   | "notes"
@@ -40,6 +41,7 @@ interface FormData {
   name: string;
   email: string;
   phone: string;
+  address: string;
   service: string;
   property: string;
   urgency: string;
@@ -48,7 +50,7 @@ interface FormData {
   notes: string;
 }
 
-const STEP_ORDER: Step[] = ["service", "property", "urgency", "urgency_followup", "notes", "name", "phone"];
+const STEP_ORDER: Step[] = ["service", "property", "address", "urgency", "urgency_followup", "notes", "name", "phone"];
 const TOTAL_STEPS = STEP_ORDER.length;
 
 function getStepNumber(step: Step): number {
@@ -63,7 +65,7 @@ interface MultiStepFormProps {
 export default function MultiStepForm({ sourcePage }: MultiStepFormProps) {
   const [step, setStep] = useState<Step>("service");
   const [form, setForm] = useState<FormData>({
-    name: "", email: "", phone: "", service: "", property: "",
+    name: "", email: "", phone: "", address: "", service: "", property: "",
     urgency: "", targetDate: "", budget: "", notes: "",
   });
   const [submitting, setSubmitting] = useState(false);
@@ -96,6 +98,7 @@ export default function MultiStepForm({ sourcePage }: MultiStepFormProps) {
         name: form.name,
         email: form.email,
         phone: form.phone,
+        address: form.address,
         service: form.service,
         property_type: form.property,
         urgency: urgencyLabel,
@@ -114,6 +117,7 @@ export default function MultiStepForm({ sourcePage }: MultiStepFormProps) {
           name: form.name,
           email: form.email,
           phone: form.phone,
+          address: form.address,
           service: form.service,
           property_type: form.property,
           urgency: urgencyLabel,
@@ -140,7 +144,7 @@ export default function MultiStepForm({ sourcePage }: MultiStepFormProps) {
         </div>
         <h2 className="text-[#1a1a1a] font-black text-3xl mb-3">You're All Set!</h2>
         <p className="text-[#1a1a1a]/60 text-base max-w-sm leading-relaxed">
-          Thanks {form.name.split(" ")[0] || "there"}! Lopaka will personally reach out to you soon. We appreciate you choosing Hawaii Painters 808.
+          Thanks {form.name.split(" ")[0] || "there"}! Hawaii Painters 808 will personally reach out to you soon. We appreciate your interest!
         </p>
         <div className="mt-8 bg-[#f5f5f0] rounded-2xl px-8 py-5 text-left max-w-sm w-full">
           <p className="text-xs font-black tracking-widest text-[#4a9fa5] uppercase mb-3">Your Request Summary</p>
@@ -202,7 +206,7 @@ export default function MultiStepForm({ sourcePage }: MultiStepFormProps) {
               { value: "Commercial", icon: "ri-store-2-line", sub: "Office, retail, or business" },
             ].map((p) => (
               <button key={p.value} type="button"
-                onClick={() => { set("property", p.value); next("urgency"); }}
+                onClick={() => { set("property", p.value); next("address"); }}
                 className={`text-left px-5 py-5 rounded-xl border-2 font-semibold text-sm transition-all cursor-pointer ${form.property === p.value ? "border-[#4a9fa5] bg-[#4a9fa5]/10 text-[#4a9fa5]" : "border-[#e8e8e0] text-[#1a1a1a] hover:border-[#4a9fa5]/50"}`}
               >
                 <div className="w-9 h-9 flex items-center justify-center bg-[#4a9fa5]/10 rounded-lg mb-2">
@@ -217,7 +221,24 @@ export default function MultiStepForm({ sourcePage }: MultiStepFormProps) {
         </StepWrapper>
       )}
 
-      {/* STEP 3: Urgency */}
+      {/* STEP 3: Address */}
+      {step === "address" && (
+        <StepWrapper icon="ri-map-pin-2-line" question="What's the property address?" sub="Helps us give you an accurate estimate for your area">
+          <input
+            type="text" name="address" value={form.address}
+            onChange={(e) => set("address", e.target.value)}
+            placeholder="e.g. 123 Kalakaua Ave, Honolulu, HI" autoFocus
+            className="w-full border-b-2 border-[#e8e8e0] focus:border-[#4a9fa5] outline-none bg-transparent text-[#1a1a1a] text-xl font-semibold py-3 transition-colors placeholder:text-[#1a1a1a]/25"
+          />
+          <p className="text-xs text-[#1a1a1a]/35 mt-2">A general neighborhood or city is fine too</p>
+          <div className="flex gap-3 mt-6">
+            <BackButton onClick={() => next("property")} />
+            <NextButton disabled={!form.address.trim()} onClick={() => next("urgency")} />
+          </div>
+        </StepWrapper>
+      )}
+
+      {/* STEP 4: Urgency */}
       {step === "urgency" && (
         <StepWrapper icon="ri-time-line" question="How soon do you need this done?" sub="We'll tailor our response to your timeline">
           <div className="flex flex-col gap-3 mt-2">
@@ -239,11 +260,11 @@ export default function MultiStepForm({ sourcePage }: MultiStepFormProps) {
               </button>
             ))}
           </div>
-          <div className="mt-6"><BackButton onClick={() => next("property")} /></div>
+          <div className="mt-6"><BackButton onClick={() => next("address")} /></div>
         </StepWrapper>
       )}
 
-      {/* STEP 4: Urgency follow-up — only for "month" and "planning" */}
+      {/* STEP 5: Urgency follow-up — only for "month" and "planning" */}
       {step === "urgency_followup" && form.urgency === "month" && (
         <StepWrapper icon="ri-calendar-line" question="Do you have a target date in mind?" sub="Even a rough timeframe helps us plan">
           <input
@@ -273,7 +294,7 @@ export default function MultiStepForm({ sourcePage }: MultiStepFormProps) {
         </StepWrapper>
       )}
 
-      {/* STEP 5: Notes */}
+      {/* STEP 6: Notes */}
       {step === "notes" && (
         <StepWrapper icon="ri-file-text-line" question="Anything else we should know?" sub="Describe your project, colors, concerns — anything helps">
           <textarea
@@ -290,12 +311,12 @@ export default function MultiStepForm({ sourcePage }: MultiStepFormProps) {
         </StepWrapper>
       )}
 
-      {/* STEP 6: Name */}
+      {/* STEP 7: Name */}
       {step === "name" && (
         <StepWrapper
           icon="ri-user-3-line"
           question="Almost done — what's your name?"
-          sub="So Lopaka knows who to reach out to"
+          sub="So Hawaii Painters 808 knows who to reach out to"
         >
           <input
             type="text" name="name" value={form.name}
@@ -310,11 +331,11 @@ export default function MultiStepForm({ sourcePage }: MultiStepFormProps) {
         </StepWrapper>
       )}
 
-      {/* STEP 7: Phone — final step, submit here */}
+      {/* STEP 8: Phone — final step, submit here */}
       {step === "phone" && (
         <StepWrapper
           icon="ri-phone-line"
-          question="Best number for Lopaka to call?"
+          question="Best number for us to call?"
           sub="Your free estimate is one step away"
         >
           <input
@@ -345,7 +366,7 @@ export default function MultiStepForm({ sourcePage }: MultiStepFormProps) {
               }
             </button>
           </div>
-          <p className="text-center text-xs text-[#1a1a1a]/30 mt-3">No spam. Lopaka calls personally — usually same day.</p>
+
         </StepWrapper>
       )}
     </form>

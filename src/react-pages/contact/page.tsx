@@ -45,7 +45,7 @@ export default function ContactPage() {
             Get Your Free Quote
           </h1>
           <p className="text-white/60 text-lg max-w-xl mx-auto leading-relaxed">
-            Tell us about your project and Lopaka will personally reach out with an honest, no-pressure estimate.
+            Tell us about your project and Hawaii Painters 808 will personally reach out with an honest, no-pressure estimate.
           </p>
         </div>
       </section>
@@ -58,7 +58,7 @@ export default function ContactPage() {
           <div className="lg:col-span-3 bg-white rounded-2xl p-8 md:p-10">
             <div className="mb-8">
               <h2 className="text-[#1a1a1a] font-black text-2xl mb-1">Request a Free Estimate</h2>
-              <p className="text-[#1a1a1a]/50 text-sm">Takes about 60 seconds. No spam, ever.</p>
+              <p className="text-[#1a1a1a]/50 text-sm">Takes about 60 seconds.</p>
             </div>
             <ContactForm />
           </div>
@@ -175,8 +175,8 @@ export default function ContactPage() {
                 {
                   step: "01",
                   icon: "ri-file-search-line",
-                  title: "Lopaka Reviews Your Request",
-                  desc: "Every submission goes straight to Lopaka — not a call center. He reads your project details personally, usually within a few hours.",
+                  title: "Hawaii Painters 808 Reviews Your Request",
+                  desc: "Every submission goes straight to us — not a call center. We review your project details personally, usually within a few hours.",
                   tag: "Within hours",
                   tagIcon: "ri-time-line",
                 },
@@ -184,7 +184,7 @@ export default function ContactPage() {
                   step: "02",
                   icon: "ri-phone-line",
                   title: "Personal Call Within 24 Hours",
-                  desc: "Lopaka calls you directly to ask a few quick questions, confirm your address, and schedule a time that works for you.",
+                  desc: "We call you directly to ask a few quick questions, confirm your address, and schedule a time that works for you.",
                   tag: "Within 24 hrs",
                   tagIcon: "ri-phone-fill",
                 },
@@ -192,7 +192,7 @@ export default function ContactPage() {
                   step: "03",
                   icon: "ri-home-smile-line",
                   title: "Free On-Site Estimate",
-                  desc: "Lopaka comes to your property, walks the job, and gives you a detailed written estimate — completely free, zero pressure.",
+                  desc: "We come to your property, walk the job, and give you a detailed written estimate — completely free, zero pressure.",
                   tag: "100% Free",
                   tagIcon: "ri-gift-line",
                 },
@@ -218,7 +218,7 @@ export default function ContactPage() {
             {/* Bottom CTA strip */}
             <div className="mt-10 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
               <p className="text-white/40 text-sm text-center sm:text-left">
-                Prefer to skip the form? Call Lopaka directly — he picks up.
+                Prefer to skip the form? Call us directly — we pick up.
               </p>
               <a
                 href="tel:8082723816"
