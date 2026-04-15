@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-
 import Navbar from "@/components/feature/Navbar";
 import Footer from "@/components/feature/Footer";
 import NearbyAreas from "@/components/feature/NearbyAreas";
@@ -148,7 +147,7 @@ export default function PaintersHawaiiKaiPage() {
       <section className="relative min-h-[620px] md:min-h-[700px] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/hawaii-kai-hero.jpg"
+            src="/images/area-hawaii-kai.jpg"
             alt="Painters in Hawaii Kai Hawaii"
             className="w-full h-full object-cover object-top"
           />
@@ -331,7 +330,7 @@ export default function PaintersHawaiiKaiPage() {
         <div className="grid grid-cols-3 h-[280px] md:h-[360px]">
           <div className="relative overflow-hidden">
             <img
-              src="/images/hawaii-kai-interior-gallery.jpg"
+              src="/images/gallery-hk-interior.jpg"
               alt="Interior painting Hawaii Kai"
               className="w-full h-full object-cover object-center"
             />
@@ -340,7 +339,7 @@ export default function PaintersHawaiiKaiPage() {
           </div>
           <div className="relative overflow-hidden">
             <img
-              src="/images/hawaii-kai-exterior-gallery.jpg"
+              src="/images/gallery-hk-exterior.jpg"
               alt="Exterior painting Hawaii Kai"
               className="w-full h-full object-cover object-center"
             />
@@ -349,7 +348,7 @@ export default function PaintersHawaiiKaiPage() {
           </div>
           <div className="relative overflow-hidden">
             <img
-              src="/images/hawaii-kai-cabinet-gallery.jpg"
+              src="/images/gallery-hk-cabinet.jpg"
               alt="Cabinet painting Hawaii Kai"
               className="w-full h-full object-cover object-center"
             />

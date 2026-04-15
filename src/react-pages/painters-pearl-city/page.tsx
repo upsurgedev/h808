@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-
 import Navbar from "@/components/feature/Navbar";
 import Footer from "@/components/feature/Footer";
 import NearbyAreas from "@/components/feature/NearbyAreas";
@@ -113,7 +112,7 @@ export default function PaintersPearlCityPage() {
       <section className="relative min-h-[620px] md:min-h-[700px] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/pearl-city-hero.jpg"
+            src="/images/area-pearl-city.jpg"
             alt="Painters in Pearl City Hawaii"
             className="w-full h-full object-cover object-top"
           />

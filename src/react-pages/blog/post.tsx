@@ -1,13 +1,12 @@
 import { useEffect } from "react";
-
 import Navbar from "@/components/feature/Navbar";
 import Footer from "@/components/feature/Footer";
 import { blogPosts } from "@/mocks/blog";
 
-export default function BlogPostPage({ slug: slugProp }: { slug?: string }) {
-  const slug = slugProp ?? (typeof window !== "undefined" ? window.location.pathname.split("/").pop() : "");
-  const post = blogPosts.find((p) => p.slug === slug);
-  const related = blogPosts.filter((p) => p.slug !== slug).slice(0, 3);
+export default function BlogPostPage({ slug }: { slug?: string }) {
+  const resolvedSlug = slug ?? (typeof window !== 'undefined' ? window.location.pathname.split('/').filter(Boolean).pop() : '');
+  const post = blogPosts.find((p) => p.slug === resolvedSlug);
+  const related = blogPosts.filter((p) => p.slug !== resolvedSlug).slice(0, 3);
 
   useEffect(() => {
     if (!post) return;
@@ -184,7 +183,7 @@ export default function BlogPostPage({ slug: slugProp }: { slug?: string }) {
                 <div className="bg-[#1a1a1a] rounded-2xl p-6 text-white">
                   <div className="flex items-center gap-3 mb-4">
                     <img
-                      src="https://storage.readdy-site.link/project_files/4b03d90a-3e92-41f2-89f6-2a6d0d0ed1c4/f6ced8a9-9ddb-4246-99c1-bbd7f2cd866e_lo_hat_brush.png?v=8ef6ac5502d8c1f1d14ef407d6e6cc09"
+                      src="/images/lopaka-hat-brush.png?v=8ef6ac5502d8c1f1d14ef407d6e6cc09"
                       alt="Lopaka"
                       className="w-14 h-14 rounded-full object-cover object-top bg-[#4a9fa5]/20 flex-shrink-0"
                     />

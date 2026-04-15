@@ -9,7 +9,7 @@ export default function HnlHero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <img
-          src="/images/honolulu-interior-painting-hero.jpg"
+          src="/images/hero-honolulu-interior.jpg"
           alt="Interior painting Honolulu Hawaii"
           className="w-full h-full object-cover object-top"
         />

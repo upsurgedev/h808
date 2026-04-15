@@ -1,5 +1,4 @@
 
-
 const related = [
   { icon: "ri-home-4-line", title: "Interior Painting", desc: "Sherwin-Williams Duration paint built for Hawaii's humidity. Proper prep, two coats minimum, every room.", slug: "interior-painting" },
   { icon: "ri-community-line", title: "Residential Painting", desc: "Full home painting inside and out. Your ʻohana's home deserves the same care we'd give our own.", slug: "residential-painting" },

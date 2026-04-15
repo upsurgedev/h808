@@ -1,4 +1,3 @@
-
 import { primaryAreas } from "@/mocks/data";
 
 export default function ExteriorLocations() {

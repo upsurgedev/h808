@@ -1,5 +1,4 @@
 
-
 interface AreaLink {
   name: string;
   region: string;

@@ -1,11 +1,10 @@
 
-
 export default function DrywallCta() {
   return (
     <section className="relative py-24 px-6 md:px-16 overflow-hidden bg-[#1a1a1a]">
       <div className="absolute inset-0">
         <img
-          src="/images/drywall-cta.jpg"
+          src="/images/cta-drywall.jpg"
           alt="Drywall repair result — Hawaii Painters 808"
           className="w-full h-full object-cover object-top opacity-15"
         />
@@ -16,7 +15,7 @@ export default function DrywallCta() {
         <div className="flex justify-center mb-8">
           <div className="overflow-hidden w-24 h-24 rounded-full border-4 border-[#4a9fa5]">
             <img
-              src="https://storage.readdy-site.link/project_files/4b03d90a-3e92-41f2-89f6-2a6d0d0ed1c4/f6ced8a9-9ddb-4246-99c1-bbd7f2cd866e_lo_hat_brush.png?v=8ef6ac5502d8c1f1d14ef407d6e6cc09"
+              src="/images/lopaka-hat-brush.png?v=8ef6ac5502d8c1f1d14ef407d6e6cc09"
               alt="Lopaka — Owner, Hawaii Painters 808"
               className="w-full h-full object-cover object-top"
             />

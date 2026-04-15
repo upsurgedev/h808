@@ -1,10 +1,9 @@
 
-
 export default function ResidentialHero() {
   return (
     <section className="relative min-h-[92vh] flex items-end overflow-hidden bg-[#1a1a1a]">
       <div className="absolute inset-0">
-        <img src="/images/residential-painting-hero.jpg" alt="Residential painting Oahu Hawaii — Hawaii Painters 808" className="w-full h-full object-cover object-top opacity-60" />
+        <img src="/images/hero-residential.jpg" alt="Residential painting Oahu Hawaii — Hawaii Painters 808" className="w-full h-full object-cover object-top opacity-60" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] via-[#1a1a1a]/40 to-transparent"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a] via-[#1a1a1a]/80 to-transparent"></div>
       </div>

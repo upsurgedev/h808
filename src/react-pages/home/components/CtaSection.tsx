@@ -1,11 +1,10 @@
 
-
 export default function CtaSection() {
   return (
     <section className="relative py-24 px-6 md:px-16 overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="/images/home-cta.jpg"
+          src="/images/cta-home.jpg"
           alt="Beautiful painted home in Hawaii"
           className="w-full h-full object-cover object-top"
         />

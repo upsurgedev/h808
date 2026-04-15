@@ -1,4 +1,3 @@
-
 const coverageList = ["Single-family homes — interior, exterior, or both","Condos and townhomes across Honolulu","Pre-sale repaints and rental property turnovers","Room-by-room or full home repaints","New construction touch-ups and move-in repaints","Investment properties and vacation rentals"];
 const approach = [{ label: "Respectful of Your Home", desc: "We treat your ʻohana's home like our own — clean, careful, on schedule", icon: "ri-home-heart-line" },{ label: "Minimal Disruption", desc: "We work room by room so your family can keep living normally", icon: "ri-time-line" },{ label: "Sherwin-Williams Duration", desc: "A premium paint we've trusted for 30+ years in Hawaii's conditions — right product every time", icon: "ri-shield-check-line" },{ label: "Written Schedule", desc: "You get a timeline upfront. We stick to it.", icon: "ri-calendar-check-line" }];
 export default function ResidentialProcess() {
@@ -30,7 +29,7 @@ export default function ResidentialProcess() {
         </div>
         <div className="border-t border-white/10 pt-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <div className="flex items-start gap-5 flex-1">
-            <div className="flex-shrink-0 w-20 h-20 rounded-full overflow-hidden border-2 border-[#4a9fa5]"><img src="https://storage.readdy-site.link/project_files/4b03d90a-3e92-41f2-89f6-2a6d0d0ed1c4/5e436676-8b2a-464b-9fbb-0636d9f5aa24_white_shirt_lopaka.png?v=e4fa3cfcb2be310e2a22df761df2f2ad" alt="Lopaka — Owner, Hawaii Painters 808" className="w-full h-full object-cover object-top" /></div>
+            <div className="flex-shrink-0 w-20 h-20 rounded-full overflow-hidden border-2 border-[#4a9fa5]"><img src="/images/lopaka-white-shirt.png?v=e4fa3cfcb2be310e2a22df761df2f2ad" alt="Lopaka — Owner, Hawaii Painters 808" className="w-full h-full object-cover object-top" /></div>
             <div>
               <h3 className="text-white font-black italic text-2xl md:text-3xl uppercase mb-3">Ready to Get Started?</h3>
               <p className="text-white/60 text-base leading-relaxed max-w-xl">Call me at <a href="tel:+18082723816" className="text-[#4a9fa5] font-bold hover:underline">808-272-3816</a>. I will come out personally, walk your home, and give you a straight written estimate. No pressure. No runaround.</p>

@@ -1,15 +1,14 @@
-
 import Navbar from "@/components/feature/Navbar";
 import Footer from "@/components/feature/Footer";
 import { services } from "@/mocks/data";
 
 const serviceImages: Record<string, string> = {
-  "interior-painting": "/images/interior-painting-card.jpg",
-  "exterior-painting": "/images/exterior-painting-card.jpg",
-  "residential-painting": "/images/residential-painting-card.jpg",
-  "commercial-painting": "/images/commercial-painting-card.jpg",
-  "cabinet-painting": "/images/cabinet-painting-card.jpg",
-  "drywall": "/images/drywall-card.jpg",
+  "interior-painting": "/images/card-interior.jpg",
+  "exterior-painting": "/images/card-exterior.jpg",
+  "residential-painting": "/images/card-residential.jpg",
+  "commercial-painting": "/images/card-commercial.jpg",
+  "cabinet-painting": "/images/card-cabinet.jpg",
+  "drywall": "/images/card-drywall.jpg",
 };
 
 const trustStats = [
@@ -28,7 +27,7 @@ export default function ServicesPage() {
       <section className="relative min-h-[55vh] flex items-end overflow-hidden bg-[#1a1a1a]">
         <div className="absolute inset-0">
           <img
-            src="/images/services-page-hero.jpg"
+            src="/images/hero-services.jpg"
             alt="Hawaii Painters 808 — All Services Oahu Hawaii"
             className="w-full h-full object-cover object-top opacity-50"
           />
@@ -162,7 +161,7 @@ export default function ServicesPage() {
       <section className="relative overflow-hidden bg-[#1a1a1a] py-20 px-6 md:px-16">
         <div className="absolute inset-0">
           <img
-            src="/images/services-page-cta.jpg"
+            src="/images/cta-services.jpg"
             alt=""
             className="w-full h-full object-cover object-top opacity-20"
           />

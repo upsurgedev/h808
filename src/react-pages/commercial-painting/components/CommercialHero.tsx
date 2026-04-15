@@ -1,11 +1,10 @@
 
-
 export default function CommercialHero() {
   return (
     <section className="relative min-h-[92vh] flex items-end overflow-hidden bg-[#1a1a1a]">
       <div className="absolute inset-0">
         <img
-          src="/images/commercial-painting-hero.jpg"
+          src="/images/hero-commercial.jpg"
           alt="Commercial painting Honolulu Hawaii — Hawaii Painters 808"
           className="w-full h-full object-cover object-top opacity-60"
         />

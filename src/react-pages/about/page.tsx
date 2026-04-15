@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import Navbar from "@/components/feature/Navbar";
 import Footer from "@/components/feature/Footer";
@@ -94,7 +93,7 @@ export default function AboutPage() {
       <section className="relative overflow-hidden bg-[#1a1a1a]" style={{ minHeight: "480px" }}>
         <div className="absolute inset-0">
           <img
-            src="/images/about-page-hero.jpg"
+            src="/images/hero-about.jpg"
             alt="Lopaka — Hawaii Painters 808 Owner"
             className="w-full h-full object-cover object-top"
           />
@@ -132,7 +131,7 @@ export default function AboutPage() {
                 <div className="w-full h-full rounded-full p-1 bg-white">
                   <div className="w-full h-full rounded-full overflow-hidden">
                     <img
-                      src="https://storage.readdy-site.link/project_files/4b03d90a-3e92-41f2-89f6-2a6d0d0ed1c4/5e436676-8b2a-464b-9fbb-0636d9f5aa24_white_shirt_lopaka.png?v=e4fa3cfcb2be310e2a22df761df2f2ad"
+                      src="/images/lopaka-white-shirt.png?v=e4fa3cfcb2be310e2a22df761df2f2ad"
                       alt="Lopaka — Owner of Hawaii Painters 808"
                       className="w-full h-full object-cover object-top"
                     />
@@ -262,7 +261,7 @@ export default function AboutPage() {
           </div>
           <div className="w-full h-72 rounded-xl overflow-hidden">
             <img
-              src="/images/about-paint-closeup.jpg"
+              src="/images/gallery-about-paint.jpg"
               alt="Lopaka applying Sherwin-Williams Duration paint on Oahu home"
               className="w-full h-full object-cover object-top"
             />

@@ -1,5 +1,4 @@
 
-
 const related = [
   {
     icon: "ri-home-4-line",

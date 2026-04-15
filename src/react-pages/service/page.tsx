@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/feature/Navbar";
 import Footer from "@/components/feature/Footer";
 import { services, testimonials, primaryAreas } from "@/mocks/data";
@@ -27,7 +26,7 @@ const serviceDetails: Record<string, {
       { q: "What paint do you use?", a: "We use Sherwin-Williams Duration — a premium paint line built for demanding conditions. It's what I've trusted for 30+ years painting homes across Oahu." },
       { q: "Do you repair drywall before painting?", a: "Yes — minor drywall repairs, nail holes, and cracks are included in every interior painting project." },
     ],
-    image: "/images/interior-painting-hero.jpg",
+    image: "/images/card-interior-page.jpg",
   },
   "exterior-painting": {
     hero: "Exterior Painting in Oahu, Hawaii",
@@ -45,7 +44,7 @@ const serviceDetails: Record<string, {
       { q: "What makes your paint Hawaii-specific?", a: "After 30+ years painting on Oahu, I use Sherwin-Williams Duration because it holds up best against salt air, UV rays, and humidity — the three biggest threats to exterior paint in Hawaii." },
       { q: "Do you paint roofs and fences too?", a: "Yes — we handle all exterior surfaces including fences, gates, trim, shutters, and more." },
     ],
-    image: "/images/exterior-painting-hero.jpg",
+    image: "/images/card-exterior-page.jpg",
   },
   "commercial-painting": {
     hero: "Commercial Painting in Oahu, Hawaii",
@@ -63,14 +62,14 @@ const serviceDetails: Record<string, {
       { q: "How large of a commercial project can you handle?", a: "We handle everything from single offices to large multi-story commercial buildings across Oahu." },
       { q: "Do you do HOA common areas?", a: "Yes — we're experienced with HOA projects including common areas, building exteriors, and parking structures." },
     ],
-    image: "/images/commercial-painting-hero.jpg",
+    image: "/images/card-commercial-page.jpg",
   },
 };
 
-export default function ServicePage({ slug: slugProp }: { slug?: string }) {
-  const slug = slugProp ?? (typeof window !== "undefined" ? window.location.pathname.split("/").pop() : "");
-  const service = services.find((s) => s.slug === slug);
-  const details = slug ? serviceDetails[slug] : null;
+export default function ServicePage({ slug }: { slug?: string }) {
+  const resolvedSlug = slug ?? (typeof window !== 'undefined' ? window.location.pathname.split('/').filter(Boolean).pop() : '');
+  const service = services.find((s) => s.slug === resolvedSlug);
+  const details = resolvedSlug ? serviceDetails[resolvedSlug] : null;
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   if (!service || !details) {

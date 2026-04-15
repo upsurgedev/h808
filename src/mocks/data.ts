@@ -62,7 +62,7 @@ export const primaryAreas = [
     slug: "honolulu",
     href: "/painters-honolulu-hi",
     subLocations: ["Waikiki", "Ala Moana", "Makiki", "Manoa", "Nuuanu", "Kaimuki", "Kalihi", "Kapalama", "Punchbowl", "Palolo", "Downtown"],
-    image: "/images/honolulu-hub.jpg",
+    image: "/images/mock-honolulu.jpg",
   },
   {
     id: "pearl-city",
@@ -70,7 +70,7 @@ export const primaryAreas = [
     slug: "pearl-city",
     href: "/painters-pearl-city-hi",
     subLocations: ["Aiea", "Halawa", "Pearl Harbor", "Waimalu"],
-    image: "/images/pearl-city-hub.jpg",
+    image: "/images/mock-pearl-city.jpg",
   },
   {
     id: "kaneohe",
@@ -78,7 +78,7 @@ export const primaryAreas = [
     slug: "kaneohe",
     href: "/painters-kaneohe-hi",
     subLocations: ["Kailua", "Heeia", "Ahuimanu", "Haiku"],
-    image: "/images/kaneohe-hub.jpg",
+    image: "/images/mock-kaneohe.jpg",
   },
   {
     id: "kailua",
@@ -86,7 +86,7 @@ export const primaryAreas = [
     slug: "kailua",
     href: "/painters-kailua-hi",
     subLocations: ["Lanikai", "Enchanted Lake", "Keolu Hills", "Maunawili"],
-    image: "/images/kailua-hub.jpg",
+    image: "/images/mock-kailua.jpg",
   },
   {
     id: "hawaii-kai",
@@ -94,7 +94,7 @@ export const primaryAreas = [
     slug: "hawaii-kai",
     href: "/painters-hawaii-kai-hi",
     subLocations: ["Portlock", "Aina Haina", "Kuliouou", "Haiku Plantations", "Mariners Ridge", "Kalama Valley"],
-    image: "/images/hawaii-kai-hub.jpg",
+    image: "/images/mock-hawaii-kai.jpg",
   },
   {
     id: "kahala",
@@ -102,7 +102,7 @@ export const primaryAreas = [
     slug: "kahala",
     href: "/painters-kahala-diamond-head-hi",
     subLocations: ["Kahala", "Diamond Head", "Black Point", "Waialae Iki", "Wilhelmina Rise"],
-    image: "/images/kahala-hub.jpg",
+    image: "/images/mock-kahala.jpg",
   },
   {
     id: "waipahu",
@@ -110,7 +110,7 @@ export const primaryAreas = [
     slug: "waipahu",
     href: "/painters-waipahu-hi",
     subLocations: ["Waipahu Town", "Village Park", "Royal Kunia", "Waikele", "Crestview", "Honouliuli"],
-    image: "/images/waipahu-hub.jpg",
+    image: "/images/mock-waipahu.jpg",
   },
   {
     id: "mililani",
@@ -118,7 +118,7 @@ export const primaryAreas = [
     slug: "mililani",
     href: "/painters-mililani-hi",
     subLocations: ["Mililani Town", "Mililani Mauka", "Waipio Acres", "Launani Valley", "Melemanu", "Waikele"],
-    image: "/images/mililani-hub.jpg",
+    image: "/images/mock-mililani.jpg",
   },
   {
     id: "north-shore",
@@ -126,7 +126,7 @@ export const primaryAreas = [
     slug: "north-shore",
     href: "/painters-north-shore-hi",
     subLocations: ["Haleiwa", "Sunset Beach", "Waimea", "Pupukea", "Kahuku", "Laie"],
-    image: "/images/north-shore-hub.jpg",
+    image: "/images/mock-north-shore.jpg",
   },
   {
     id: "wahiawa",
@@ -134,7 +134,7 @@ export const primaryAreas = [
     slug: "wahiawa",
     href: null,
     subLocations: ["Whitmore Village", "Poamoho", "Schofield Barracks", "Wheeler"],
-    image: "/images/north-shore-hub.jpg",
+    image: "/images/mock-wahiawa.jpg",
   },
   {
     id: "kapolei",
@@ -142,7 +142,7 @@ export const primaryAreas = [
     slug: "kapolei",
     href: "/painters-kapolei-hi",
     subLocations: ["Ko Olina", "Makakilo", "Ocean Pointe", "Honokai Hale"],
-    image: "/images/kapolei-hub.jpg",
+    image: "/images/mock-kapolei.jpg",
   },
   {
     id: "ewa-beach",
@@ -150,7 +150,7 @@ export const primaryAreas = [
     slug: "ewa-beach",
     href: "/painters-ewa-beach-hi",
     subLocations: ["Ewa Villages", "Iroquois Point", "Ewa Gentry", "Hoakalei"],
-    image: "/images/ewa-beach-hub.jpg",
+    image: "/images/mock-ewa-beach.jpg",
   },
   {
     id: "waianae",
@@ -158,7 +158,7 @@ export const primaryAreas = [
     slug: "waianae",
     href: null,
     subLocations: ["Nanakuli", "Maili", "Lualualei", "Pokai Bay"],
-    image: "/images/north-shore-hub.jpg",
+    image: "/images/mock-waianae.jpg",
   },
   {
     id: "makaha",
@@ -166,7 +166,7 @@ export const primaryAreas = [
     slug: "makaha",
     href: null,
     subLocations: ["Makaha Valley", "Keaau", "Mauna Lahilahi", "Papailoa"],
-    image: "/images/makaha-hub.jpg",
+    image: "/images/mock-makaha.jpg",
   },
 ];
 

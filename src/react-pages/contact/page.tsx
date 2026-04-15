@@ -30,7 +30,7 @@ export default function ContactPage() {
       <section className="relative bg-[#1a1a1a] pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/contact-page-hero.jpg"
+            src="/images/hero-contact.jpg"
             alt="Contact Hawaii Painters 808"
             className="w-full h-full object-cover object-top opacity-15"
           />
@@ -70,7 +70,7 @@ export default function ContactPage() {
             <div className="bg-[#1a1a1a] rounded-2xl p-7 text-white">
               <div className="flex items-center gap-4 mb-5">
                 <img
-                  src="https://storage.readdy-site.link/project_files/4b03d90a-3e92-41f2-89f6-2a6d0d0ed1c4/f6ced8a9-9ddb-4246-99c1-bbd7f2cd866e_lo_hat_brush.png?v=8ef6ac5502d8c1f1d14ef407d6e6cc09"
+                  src="/images/lopaka-hat-brush.png?v=8ef6ac5502d8c1f1d14ef407d6e6cc09"
                   alt="Lopaka — Owner"
                   className="w-16 h-16 rounded-full object-cover object-top bg-[#4a9fa5]/20"
                 />

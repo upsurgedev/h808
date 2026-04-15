@@ -1,12 +1,11 @@
 import { useState } from "react";
-
 import Navbar from "@/components/feature/Navbar";
 import Footer from "@/components/feature/Footer";
 import { primaryAreas, services, testimonials } from "@/mocks/data";
 
-export default function AreaPage({ slug: slugProp }: { slug?: string }) {
-  const slug = slugProp ?? (typeof window !== "undefined" ? window.location.pathname.split("/").pop() : "");
-  const area = primaryAreas.find((a) => a.slug === slug);
+export default function AreaPage({ slug }: { slug?: string }) {
+  const resolvedSlug = slug ?? (typeof window !== 'undefined' ? window.location.pathname.split('/').filter(Boolean).pop() : '');
+  const area = primaryAreas.find((a) => a.slug === resolvedSlug);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   if (!area) {

@@ -1,5 +1,4 @@
 
-
 const posts = [
   {
     slug: "best-exterior-paint-for-hawaii-climate",

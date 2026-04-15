@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-
 import Navbar from "@/components/feature/Navbar";
 import Footer from "@/components/feature/Footer";
 import { blogPosts } from "@/mocks/blog";
@@ -48,7 +47,7 @@ export default function BlogPage() {
         <section className="relative bg-[#1a1a1a] pt-36 pb-20 overflow-hidden">
           <div className="absolute inset-0">
             <img
-              src="/images/blog-page-hero.jpg"
+              src="/images/hero-blog.jpg"
               alt="Hawaii Painters 808 Blog"
               className="w-full h-full object-cover object-top opacity-20"
             />

@@ -1,4 +1,3 @@
-
 import { primaryAreas } from "@/mocks/data";
 
 const FEATURED_IDS = [

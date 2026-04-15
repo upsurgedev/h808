@@ -1,4 +1,3 @@
-
 import { services } from "@/mocks/data";
 
 export default function ServicesSection() {

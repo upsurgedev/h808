@@ -1,11 +1,10 @@
 
-
 export default function ExteriorHero() {
   return (
     <section className="relative min-h-[92vh] flex items-end overflow-hidden bg-[#1a1a1a]">
       <div className="absolute inset-0">
         <img
-          src="/images/exterior-painting-hero.jpg"
+          src="/images/hero-exterior.jpg"
           alt="Exterior painting Oahu Hawaii — Hawaii Painters 808"
           className="w-full h-full object-cover object-top opacity-60"
         />

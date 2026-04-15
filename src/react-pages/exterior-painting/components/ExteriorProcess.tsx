@@ -1,5 +1,4 @@
 
-
 const coverageList = [
   "Wood siding, trim, and fascia",
   "Stucco and concrete block exteriors",
@@ -87,7 +86,7 @@ export default function ExteriorProcess() {
         <div className="border-t border-white/10 pt-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <div className="flex items-start gap-5 flex-1">
             <div className="flex-shrink-0 w-20 h-20 rounded-full overflow-hidden border-2 border-[#4a9fa5]">
-              <img src="https://storage.readdy-site.link/project_files/4b03d90a-3e92-41f2-89f6-2a6d0d0ed1c4/5e436676-8b2a-464b-9fbb-0636d9f5aa24_white_shirt_lopaka.png?v=e4fa3cfcb2be310e2a22df761df2f2ad" alt="Lopaka — Owner, Hawaii Painters 808" className="w-full h-full object-cover object-top" />
+              <img src="/images/lopaka-white-shirt.png?v=e4fa3cfcb2be310e2a22df761df2f2ad" alt="Lopaka — Owner, Hawaii Painters 808" className="w-full h-full object-cover object-top" />
             </div>
             <div>
               <h3 className="text-white font-black italic text-2xl md:text-3xl uppercase mb-3">Ready to Get Started?</h3>

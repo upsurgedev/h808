@@ -1,5 +1,4 @@
 
-
 const serviceLinks = [
   { label: "Interior Painting", href: "/services/interior-painting" },
   { label: "Exterior Painting", href: "/services/exterior-painting" },
@@ -39,7 +38,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="mb-4">
               <img
-                src="https://storage.readdy-site.link/project_files/4b03d90a-3e92-41f2-89f6-2a6d0d0ed1c4/70a92d63-4fc6-4df7-8a85-7c5ff53fbb09_white_logo_with_text.png?v=0a7c89a6433a16058044aea1981576ce"
+                src="/images/logo-with-text.png?v=0a7c89a6433a16058044aea1981576ce"
                 alt="Hawaii Painters 808"
                 className="h-14 w-auto object-contain"
               />

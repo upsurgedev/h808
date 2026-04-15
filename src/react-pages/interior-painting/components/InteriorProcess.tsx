@@ -1,5 +1,4 @@
 
-
 const whatWePaint = [
   "Living rooms, bedrooms, and common areas",
   "Ceilings — flat, textured, vaulted",
@@ -109,7 +108,7 @@ export default function InteriorProcess() {
             {/* Owner photo */}
             <div className="flex-shrink-0 w-20 h-20 rounded-full overflow-hidden border-2 border-[#4a9fa5]">
               <img
-                src="https://storage.readdy-site.link/project_files/4b03d90a-3e92-41f2-89f6-2a6d0d0ed1c4/5e436676-8b2a-464b-9fbb-0636d9f5aa24_white_shirt_lopaka.png?v=e4fa3cfcb2be310e2a22df761df2f2ad"
+                src="/images/lopaka-white-shirt.png?v=e4fa3cfcb2be310e2a22df761df2f2ad"
                 alt="Lopaka — Owner, Hawaii Painters 808"
                 className="w-full h-full object-cover object-top"
               />

@@ -23,7 +23,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "7 min read",
     date: "April 14, 2026",
     featured: false,
-    image: "/images/blog-cost-in-hawaii.jpg",
+    image: "/images/blog-cost-hawaii.jpg",
     content: {
       intro: "I get asked this question every week: 'What's it going to cost to paint my house in Hawaii?' The honest answer is — it depends on a lot of factors. But I know that's not helpful when you're trying to budget. So here's a real breakdown of what painting costs on Oahu in 2026, based on actual jobs we do. These are real numbers, not lowball estimates designed to get you on the phone.",
       sections: [
@@ -63,7 +63,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "6 min read",
     date: "April 13, 2026",
     featured: false,
-    image: "/images/blog-best-paint-for-hawaii.jpg",
+    image: "/images/blog-best-paint.jpg",
     content: {
       intro: "After 30+ years painting homes across Oahu, I've used a lot of different exterior paint products. I've seen what holds up and what doesn't in Hawaii's specific combination of challenges: intense UV, salt air, high humidity, and occasional heavy rain. Here's my honest take on what actually works — and what I use on every job.",
       sections: [
@@ -103,7 +103,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "6 min read",
     date: "April 11, 2026",
     featured: false,
-    image: "/images/blog-find-a-painter-oahu.jpg",
+    image: "/images/blog-find-painter.jpg",
     content: {
       intro: "Finding a good painter on Oahu is genuinely harder than it should be. The island has a mix of excellent contractors and people who will take your deposit and disappear, or do a rush job that fails in a year. I've been on Oahu for 30+ years and I've seen every version of this story. Here's a practical guide to finding someone you can actually trust — whether that's me or someone else.",
       sections: [
@@ -220,7 +220,7 @@ export const blogPosts: BlogPost[] = [
     category: "Exterior Painting",
     readTime: "4 min read",
     date: "January 30, 2026",
-    image: "/images/blog-paint-longevity.jpg",
+    image: "/images/blog-longevity.jpg",
     content: {
       intro: "One of the most common questions I get is: how long will this last? The honest answer is — it depends. Here's what actually determines the lifespan of an exterior paint job in Hawaii.",
       sections: [

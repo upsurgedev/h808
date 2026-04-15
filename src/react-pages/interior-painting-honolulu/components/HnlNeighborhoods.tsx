@@ -1,5 +1,4 @@
 
-
 const neighborhoods = [
   { label: "Kahala", href: "/painters-in-kahala" },
   { label: "Kaimuki", href: "/painters-in-kaimuki" },

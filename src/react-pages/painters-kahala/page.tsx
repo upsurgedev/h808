@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-
 import Navbar from "@/components/feature/Navbar";
 import Footer from "@/components/feature/Footer";
 import NearbyAreas from "@/components/feature/NearbyAreas";
@@ -148,7 +147,7 @@ export default function PaintersKahalaPage() {
       <section className="relative min-h-[620px] md:min-h-[700px] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/kahala-hero.jpg"
+            src="/images/area-kahala.jpg"
             alt="Painters in Kahala and Diamond Head Hawaii"
             className="w-full h-full object-cover object-top"
           />
@@ -348,19 +347,19 @@ export default function PaintersKahalaPage() {
         <div className="grid grid-cols-4 h-[240px] md:h-[320px]">
           {[
             {
-              src: "/images/kahala-exterior-gallery.jpg",
+              src: "/images/gallery-kahala-exterior.jpg",
               label: "Kahala Exterior",
             },
             {
-              src: "/images/kahala-interior-gallery.jpg",
+              src: "/images/gallery-kahala-interior.jpg",
               label: "Diamond Head Interior",
             },
             {
-              src: "/images/kahala-cabinet-gallery.jpg",
+              src: "/images/gallery-kahala-cabinet.jpg",
               label: "Cabinet Refinishing",
             },
             {
-              src: "/images/kahala-black-point-gallery.jpg",
+              src: "/images/gallery-kahala-blackpoint.jpg",
               label: "Black Point Estate",
             },
           ].map((img) => (

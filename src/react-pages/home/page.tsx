@@ -58,8 +58,8 @@ export default function HomePage() {
         "description": "Professional painting contractor serving all of Oahu, Hawaii since 2012. Interior painting, exterior painting, cabinet painting, and drywall repair.",
         "telephone": "+18082723816",
         "url": "https://hawaiipainters808.com",
-        "logo": "https://storage.readdy-site.link/project_files/4b03d90a-3e92-41f2-89f6-2a6d0d0ed1c4/aa9e51d6-4297-44c6-b03b-1aac53c5a83a_white_logo_808.png?v=3d433baea1af8e310a444c6b98ec62f5",
-        "image": "https://storage.readdy-site.link/project_files/4b03d90a-3e92-41f2-89f6-2a6d0d0ed1c4/aa9e51d6-4297-44c6-b03b-1aac53c5a83a_white_logo_808.png?v=3d433baea1af8e310a444c6b98ec62f5",
+        "logo": "/images/logo-808.png?v=3d433baea1af8e310a444c6b98ec62f5",
+        "image": "/images/logo-808.png?v=3d433baea1af8e310a444c6b98ec62f5",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "3215 Ala Ilima Street",

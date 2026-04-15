@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 
-
 const serviceLinks = [
   { label: "Interior Painting", slug: "interior-painting", icon: "ri-home-4-line" },
   { label: "Exterior Painting", slug: "exterior-painting", icon: "ri-building-line" },
@@ -44,7 +43,7 @@ export default function Navbar() {
   const [mobileAreasOpen, setMobileAreasOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const areasDropdownRef = useRef<HTMLDivElement>(null);
-  const [pathname, setPathname] = useState(typeof window !== "undefined" ? window.location.pathname : "");
+  
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 60);
@@ -58,7 +57,7 @@ export default function Navbar() {
     setAreasOpen(false);
     setMobileServicesOpen(false);
     setMobileAreasOpen(false);
-  }, [pathname]);
+  }, [location]);
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -83,7 +82,7 @@ export default function Navbar() {
         {/* Logo */}
         <a href="/" className="flex items-center cursor-pointer">
           <img
-            src="https://storage.readdy-site.link/project_files/4b03d90a-3e92-41f2-89f6-2a6d0d0ed1c4/aa9e51d6-4297-44c6-b03b-1aac53c5a83a_white_logo_808.png?v=3d433baea1af8e310a444c6b98ec62f5"
+            src="/images/logo-808.png?v=3d433baea1af8e310a444c6b98ec62f5"
             alt="Hawaii Painters 808"
             className="h-14 w-auto object-contain"
           />

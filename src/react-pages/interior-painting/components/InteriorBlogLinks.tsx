@@ -1,5 +1,4 @@
 
-
 const posts = [
   {
     slug: "interior-painting-tips-hawaii-humidity",

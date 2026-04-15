@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-
 import Navbar from "@/components/feature/Navbar";
 import Footer from "@/components/feature/Footer";
 import NearbyAreas from "@/components/feature/NearbyAreas";
@@ -114,7 +113,7 @@ export default function PaintersNorthShorePage() {
       <section className="relative min-h-[620px] md:min-h-[700px] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/north-shore-hero.jpg"
+            src="/images/area-north-shore.jpg"
             alt="Painters on the North Shore Hawaii"
             className="w-full h-full object-cover object-top"
           />
@@ -322,7 +321,7 @@ export default function PaintersNorthShorePage() {
             </div>
             <div className="relative rounded-2xl overflow-hidden h-72 lg:h-80">
               <img
-                src="/images/north-shore-rental-home.jpg"
+                src="/images/gallery-north-shore-rental.jpg"
                 alt="North Shore vacation rental painting"
                 className="w-full h-full object-cover object-top"
               />

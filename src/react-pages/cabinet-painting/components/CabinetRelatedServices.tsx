@@ -1,5 +1,4 @@
 
-
 const related = [
   { icon: "ri-home-4-line", title: "Interior Painting", desc: "Walls, ceilings, trim, and doors. Sherwin-Williams Duration paint proven in Hawaii's humidity.", slug: "interior-painting" },
   { icon: "ri-building-line", title: "Exterior Painting", desc: "Salt air, UV rays, trade winds — Oahu's climate is tough on exterior paint. After 30+ years on Oahu, I know which products hold up.", slug: "exterior-painting" },

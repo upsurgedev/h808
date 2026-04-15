@@ -1,12 +1,11 @@
 
-
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-[#1a1a1a]">
       {/* Background subtle texture */}
       <div className="absolute inset-0">
         <img
-          src="/images/home-hero.jpg"
+          src="/images/hero-home-alt.jpg"
           alt="Hawaii home background"
           className="w-full h-full object-cover object-top opacity-20"
         />
@@ -87,7 +86,7 @@ export default function HeroSection() {
                   style={{ clipPath: "polygon(12% 0%, 100% 0%, 88% 100%, 0% 100%)" }}
                 >
                   <img
-                    src="https://storage.readdy-site.link/project_files/4b03d90a-3e92-41f2-89f6-2a6d0d0ed1c4/f6ced8a9-9ddb-4246-99c1-bbd7f2cd866e_lo_hat_brush.png?v=8ef6ac5502d8c1f1d14ef407d6e6cc09"
+                    src="/images/lopaka-hat-brush.png?v=8ef6ac5502d8c1f1d14ef407d6e6cc09"
                     alt="Lopaka — Owner of Hawaii Painters 808"
                     className="w-full h-auto object-contain"
                     style={{ display: "block" }}

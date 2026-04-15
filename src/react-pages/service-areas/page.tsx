@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-
 import Navbar from "@/components/feature/Navbar";
 import Footer from "@/components/feature/Footer";
 
@@ -11,7 +10,7 @@ const areas = [
     hasDedicatedPage: true,
     icon: "ri-building-2-line",
     neighborhoods: ["Waikiki", "Ala Moana", "Manoa", "Kaimuki", "Makiki", "Nuuanu", "Kalihi", "Downtown", "Punchbowl", "Palolo"],
-    image: "/images/honolulu-hub.jpg",
+    image: "/images/hub-honolulu.jpg",
   },
   {
     name: "Kailua",
@@ -20,7 +19,7 @@ const areas = [
     hasDedicatedPage: true,
     icon: "ri-water-flash-line",
     neighborhoods: ["Lanikai", "Enchanted Lake", "Keolu Hills", "Maunawili", "Coconut Grove", "Kailua Beach", "Aikahi", "Kalaheo Hillside"],
-    image: "/images/kailua-hub.jpg",
+    image: "/images/hub-kailua.jpg",
   },
   {
     name: "Kaneohe",
@@ -29,7 +28,7 @@ const areas = [
     hasDedicatedPage: true,
     icon: "ri-plant-line",
     neighborhoods: ["Haiku", "Ahuimanu", "Heeia", "Kahaluu", "Kaneohe Bay", "Lilipuna", "Puohala Village", "Waiahole"],
-    image: "/images/kaneohe-hub.jpg",
+    image: "/images/hub-kaneohe.jpg",
   },
   {
     name: "Pearl City",
@@ -38,7 +37,7 @@ const areas = [
     hasDedicatedPage: true,
     icon: "ri-home-3-line",
     neighborhoods: ["Aiea", "Halawa", "Waimalu", "Manana", "Pacific Palisades", "Pearlridge", "Newtown", "Pearl Harbor"],
-    image: "/images/pearl-city-hub.jpg",
+    image: "/images/hub-pearl-city.jpg",
   },
   {
     name: "Kapolei",
@@ -47,7 +46,7 @@ const areas = [
     hasDedicatedPage: true,
     icon: "ri-sun-line",
     neighborhoods: ["Ko Olina", "Makakilo", "Ocean Pointe", "Honokai Hale", "Kapolei Commons", "Ewa by Gentry"],
-    image: "/images/kapolei-hub.jpg",
+    image: "/images/hub-kapolei.jpg",
   },
   {
     name: "Ewa Beach",
@@ -56,7 +55,7 @@ const areas = [
     hasDedicatedPage: true,
     icon: "ri-anchor-line",
     neighborhoods: ["Ewa Villages", "Iroquois Point", "Ewa Gentry", "Hoakalei", "Ocean Pointe", "Ewa Beach Town"],
-    image: "/images/ewa-beach-hub.jpg",
+    image: "/images/hub-ewa-beach.jpg",
   },
   {
     name: "Mililani",
@@ -65,7 +64,7 @@ const areas = [
     hasDedicatedPage: true,
     icon: "ri-community-line",
     neighborhoods: ["Mililani Town", "Mililani Mauka", "Waipio Acres", "Launani Valley", "Melemanu", "Waikele"],
-    image: "/images/mililani-hub.jpg",
+    image: "/images/hub-mililani.jpg",
   },
   {
     name: "Waipahu",
@@ -74,7 +73,7 @@ const areas = [
     hasDedicatedPage: true,
     icon: "ri-map-pin-2-line",
     neighborhoods: ["Waipahu Town", "Village Park", "Royal Kunia", "Waikele", "Crestview", "Honouliuli", "Waipahu Estates", "Soda Creek"],
-    image: "/images/waipahu-hub.jpg",
+    image: "/images/hub-waipahu.jpg",
   },
   {
     name: "Wahiawa",
@@ -83,7 +82,7 @@ const areas = [
     hasDedicatedPage: false,
     icon: "ri-landscape-line",
     neighborhoods: ["Whitmore Village", "Poamoho", "Schofield Barracks", "Wheeler", "Wahiawa Town", "Kemo'o"],
-    image: "/images/north-shore-hub.jpg",
+    image: "/images/hub-wahiawa.jpg",
   },
   {
     name: "Waianae",
@@ -92,7 +91,7 @@ const areas = [
     hasDedicatedPage: false,
     icon: "ri-landscape-line",
     neighborhoods: ["Nanakuli", "Maili", "Lualualei", "Pokai Bay", "Waianae Town", "Makaha"],
-    image: "/images/north-shore-hub.jpg",
+    image: "/images/hub-waianae.jpg",
   },
   {
     name: "Kahala & Diamond Head",
@@ -101,7 +100,7 @@ const areas = [
     hasDedicatedPage: true,
     icon: "ri-ancient-gate-line",
     neighborhoods: ["Kahala", "Diamond Head", "Black Point", "Waialae Iki", "Wilhelmina Rise", "Waialae Nui Ridge", "Maunalani Heights", "St. Louis Heights"],
-    image: "/images/kahala-hub.jpg",
+    image: "/images/hub-kahala.jpg",
   },
   {
     name: "Hawaii Kai",
@@ -110,7 +109,7 @@ const areas = [
     hasDedicatedPage: true,
     icon: "ri-sailboat-line",
     neighborhoods: ["Portlock", "Kuliouou", "Aina Haina", "Hahaione", "Kalama Valley", "Mariners Ridge"],
-    image: "/images/hawaii-kai-hub.jpg",
+    image: "/images/hub-hawaii-kai.jpg",
   },
   {
     name: "Makaha",
@@ -119,7 +118,7 @@ const areas = [
     hasDedicatedPage: false,
     icon: "ri-water-percent-line",
     neighborhoods: ["Makaha Valley", "Keaau", "Mauna Lahilahi", "Papailoa", "Makaha Beach", "Lahilahi"],
-    image: "/images/north-shore-hub.jpg",
+    image: "/images/hub-makaha.jpg",
   },
   {
     name: "North Shore",
@@ -128,7 +127,7 @@ const areas = [
     hasDedicatedPage: true,
     icon: "ri-water-flash-line",
     neighborhoods: ["Haleiwa", "Sunset Beach", "Waimea", "Pupukea", "Kahuku", "Laie", "Hauula", "Waialua"],
-    image: "/images/north-shore-hub.jpg",
+    image: "/images/hub-north-shore.jpg",
   },
 ];
 
@@ -194,7 +193,7 @@ export default function ServiceAreasPage() {
       <section className="relative flex items-end overflow-hidden" style={{ minHeight: "340px" }}>
         <div className="absolute inset-0">
           <img
-            src="/images/service-areas-hero.jpg"
+            src="/images/hero-service-areas.jpg"
             alt="Hawaii Painters 808 — Serving All of Oahu"
             className="w-full h-full object-cover object-top"
           />
