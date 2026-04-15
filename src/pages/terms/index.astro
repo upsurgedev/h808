@@ -93,7 +93,7 @@ import "../../styles/global.css";
   .hp808-dropdown-menu {
     display: none;
     position: absolute;
-    top: calc(100% + 0.75rem);
+    top: 100%; padding-top: 0.75rem;
     left: 50%;
     transform: translateX(-50%);
     background: #1a1a1a;
@@ -106,6 +106,17 @@ import "../../styles/global.css";
   .hp808-dropdown-menu.services-menu { width: 16rem; }
   .hp808-dropdown-menu.areas-menu { width: 21rem; }
   .hp808-dropdown-menu.open { display: block; }
+
+  /* Invisible bridge fills the gap so mouseleave never fires mid-hover */
+  .hp808-dropdown::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: -1rem;
+    right: -1rem;
+    height: 0.75rem;
+    background: transparent;
+  }
 
   .hp808-dropdown-header {
     display: flex;
