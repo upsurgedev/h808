@@ -76,15 +76,6 @@ export default function AboutPage() {
     },
   ];
 
-  const milestones = [
-    { year: "1994", event: "Started painting homes on Oahu fresh out of high school" },
-    { year: "2001", event: "Earned Hawaii contractor's license — fully licensed & insured" },
-    { year: "2008", event: "Became a certified Sherwin-Williams Duration applicator" },
-    { year: "2012", event: "Founded Hawaii Painters 808 as a dedicated company" },
-    { year: "2018", event: "Expanded to serve all of Oahu — every neighborhood" },
-    { year: "2024", event: "500+ homes painted, 5-star Google rating maintained" },
-  ];
-
   return (
     <main>
       <Navbar />
@@ -205,66 +196,6 @@ export default function AboutPage() {
                 <p className="text-gray-500 text-sm leading-relaxed">{v.desc}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── TIMELINE ── */}
-      <section className="bg-white py-16 px-6 md:px-16">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-[#4a9fa5]/10 text-[#4a9fa5] font-black text-xs tracking-widest px-4 py-2 rounded-full mb-4 uppercase">
-              30 Years on Oahu
-            </div>
-            <h2 className="text-[#1a1a1a] font-black text-3xl md:text-4xl leading-tight">
-              The Journey
-            </h2>
-          </div>
-          <div className="relative">
-            <div className="absolute left-6 top-0 bottom-0 w-px bg-[#4a9fa5]/20 hidden sm:block"></div>
-            <div className="flex flex-col gap-8">
-              {milestones.map((m, i) => (
-                <div key={i} className="flex gap-6 items-start">
-                  <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-[#4a9fa5] text-white font-black text-xs rounded-full z-10">
-                    {m.year.slice(2)}
-                  </div>
-                  <div className="flex-1 bg-[#f5f5f5] border border-gray-200 rounded-xl p-5">
-                    <div className="text-[#4a9fa5] font-black text-sm mb-1">{m.year}</div>
-                    <div className="text-[#1a1a1a] font-semibold text-base">{m.event}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── PAINT PHILOSOPHY ── */}
-      <section className="bg-[#1a1a1a] py-16 px-6 md:px-16">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <div className="inline-flex items-center gap-2 bg-white/10 text-white font-black text-xs tracking-widest px-4 py-2 rounded-full mb-5 uppercase">
-              Why Sherwin-Williams Duration
-            </div>
-            <h2 className="text-white font-black text-3xl md:text-4xl leading-tight mb-6">
-              I Only Use Paint<br />I'd Put on My Own Home
-            </h2>
-            <p className="text-white/70 text-base leading-relaxed mb-4">
-              After 30 years painting in Hawaii, I've tried everything. Salt air destroys cheap paint in two years. UV intensity fades bargain brands fast. Humidity causes bubbling and mold if the paint isn't right.
-            </p>
-            <p className="text-white/70 text-base leading-relaxed mb-4">
-              Sherwin-Williams Duration is the only paint I've found that consistently holds up in Oahu's conditions. It's what I use on my own home. It's what I recommend to every customer.
-            </p>
-            <p className="text-white/70 text-base leading-relaxed">
-              I'm not paid to say that. I say it because after 30 years, it's simply the truth.
-            </p>
-          </div>
-          <div className="w-full h-72 rounded-xl overflow-hidden">
-            <img
-              src="/images/gallery-about-paint.jpg"
-              alt="Lopaka applying Sherwin-Williams Duration paint on Oahu home"
-              className="w-full h-full object-cover object-top"
-            />
           </div>
         </div>
       </section>
