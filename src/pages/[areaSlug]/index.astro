@@ -1,0 +1,114 @@
+---
+import PaintersHonoluluPage from "../../react-pages/painters-honolulu/page.tsx";
+import PaintersHawaiiKaiPage from "../../react-pages/painters-hawaii-kai/page.tsx";
+import PaintersKahalaPage from "../../react-pages/painters-kahala/page.tsx";
+import PaintersKailuaPage from "../../react-pages/painters-kailua/page.tsx";
+import PaintersKaneohePage from "../../react-pages/painters-kaneohe/page.tsx";
+import PaintersPearlCityPage from "../../react-pages/painters-pearl-city/page.tsx";
+import PaintersKapoleiPage from "../../react-pages/painters-kapolei/page.tsx";
+import PaintersEwaBeachPage from "../../react-pages/painters-ewa-beach/page.tsx";
+import PaintersNorthShorePage from "../../react-pages/painters-north-shore/page.tsx";
+import PaintersMililaniPage from "../../react-pages/painters-mililani/page.tsx";
+import PaintersWaipahu from "../../react-pages/painters-waipahu/page.tsx";
+
+export function getStaticPaths() {
+  return [
+    { params: { areaSlug: "painters-honolulu-hi" } },
+    { params: { areaSlug: "painters-hawaii-kai-hi" } },
+    { params: { areaSlug: "painters-kahala-diamond-head-hi" } },
+    { params: { areaSlug: "painters-kailua-hi" } },
+    { params: { areaSlug: "painters-kaneohe-hi" } },
+    { params: { areaSlug: "painters-pearl-city-hi" } },
+    { params: { areaSlug: "painters-kapolei-hi" } },
+    { params: { areaSlug: "painters-ewa-beach-hi" } },
+    { params: { areaSlug: "painters-north-shore-hi" } },
+    { params: { areaSlug: "painters-mililani-hi" } },
+    { params: { areaSlug: "painters-waipahu-hi" } },
+  ];
+}
+
+const { areaSlug } = Astro.params;
+
+const areaMeta: Record<string, { title: string; desc: string }> = {
+  "painters-honolulu-hi": {
+    title: "Painters in Honolulu HI | Hawaii Painters 808 | Free Estimates",
+    desc: "Professional painting contractor in Honolulu, Hawaii. Interior, exterior, cabinet painting. Licensed, insured. Free estimates. Call 808-272-3816.",
+  },
+  "painters-hawaii-kai-hi": {
+    title: "Painters in Hawaii Kai HI | Hawaii Painters 808 | Free Estimates",
+    desc: "Professional painting contractor in Hawaii Kai. Interior, exterior, cabinet painting. Licensed, insured. Free estimates. Call 808-272-3816.",
+  },
+  "painters-kahala-diamond-head-hi": {
+    title: "Painters in Kahala & Diamond Head HI | Hawaii Painters 808",
+    desc: "Professional painting contractor in Kahala and Diamond Head. Interior, exterior, cabinet painting. Licensed, insured. Free estimates. Call 808-272-3816.",
+  },
+  "painters-kailua-hi": {
+    title: "Painters in Kailua HI | Hawaii Painters 808 | Free Estimates",
+    desc: "Professional painting contractor in Kailua, Hawaii. Interior, exterior, cabinet painting. Licensed, insured. Free estimates. Call 808-272-3816.",
+  },
+  "painters-kaneohe-hi": {
+    title: "Painters in Kaneohe HI | Hawaii Painters 808 | Free Estimates",
+    desc: "Professional painting contractor in Kaneohe, Hawaii. Interior, exterior, cabinet painting. Licensed, insured. Free estimates. Call 808-272-3816.",
+  },
+  "painters-pearl-city-hi": {
+    title: "Painters in Pearl City HI | Hawaii Painters 808 | Free Estimates",
+    desc: "Professional painting contractor in Pearl City, Hawaii. Interior, exterior, cabinet painting. Licensed, insured. Free estimates. Call 808-272-3816.",
+  },
+  "painters-kapolei-hi": {
+    title: "Painters in Kapolei HI | Hawaii Painters 808 | Free Estimates",
+    desc: "Professional painting contractor in Kapolei, Hawaii. Interior, exterior, cabinet painting. Licensed, insured. Free estimates. Call 808-272-3816.",
+  },
+  "painters-ewa-beach-hi": {
+    title: "Painters in Ewa Beach HI | Hawaii Painters 808 | Free Estimates",
+    desc: "Professional painting contractor in Ewa Beach, Hawaii. Interior, exterior, cabinet painting. Licensed, insured. Free estimates. Call 808-272-3816.",
+  },
+  "painters-north-shore-hi": {
+    title: "Painters on the North Shore HI | Hawaii Painters 808",
+    desc: "Professional painting contractor on Oahu's North Shore. Interior, exterior, cabinet painting. Licensed, insured. Free estimates. Call 808-272-3816.",
+  },
+  "painters-mililani-hi": {
+    title: "Painters in Mililani HI | Hawaii Painters 808 | Free Estimates",
+    desc: "Professional painting contractor in Mililani, Hawaii. Interior, exterior, cabinet painting. Licensed, insured. Free estimates. Call 808-272-3816.",
+  },
+  "painters-waipahu-hi": {
+    title: "Painters in Waipahu HI | Hawaii Painters 808 | Free Estimates",
+    desc: "Professional painting contractor in Waipahu, Hawaii. Interior, exterior, cabinet painting. Licensed, insured. Free estimates. Call 808-272-3816.",
+  },
+};
+
+const meta = areaMeta[areaSlug] ?? {
+  title: `Painters in ${areaSlug.replace(/-hi$/, "").replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase())} | Hawaii Painters 808`,
+  desc: "Professional painting contractor on Oahu. Licensed, insured. Free estimates. Call 808-272-3816.",
+};
+import "../../styles/global.css";
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{meta.title}</title>
+    <meta name="description" content={meta.desc} />
+    <link rel="canonical" href={`https://housepaintershonolulu.com/${areaSlug}`} />
+    <meta property="og:title" content={meta.title} />
+    <meta property="og:description" content={meta.desc} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={`https://housepaintershonolulu.com/${areaSlug}`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" />
+  </head>
+  <body>
+    {areaSlug === "painters-honolulu-hi" && <PaintersHonoluluPage client:load />}
+    {areaSlug === "painters-hawaii-kai-hi" && <PaintersHawaiiKaiPage client:load />}
+    {areaSlug === "painters-kahala-diamond-head-hi" && <PaintersKahalaPage client:load />}
+    {areaSlug === "painters-kailua-hi" && <PaintersKailuaPage client:load />}
+    {areaSlug === "painters-kaneohe-hi" && <PaintersKaneohePage client:load />}
+    {areaSlug === "painters-pearl-city-hi" && <PaintersPearlCityPage client:load />}
+    {areaSlug === "painters-kapolei-hi" && <PaintersKapoleiPage client:load />}
+    {areaSlug === "painters-ewa-beach-hi" && <PaintersEwaBeachPage client:load />}
+    {areaSlug === "painters-north-shore-hi" && <PaintersNorthShorePage client:load />}
+    {areaSlug === "painters-mililani-hi" && <PaintersMililaniPage client:load />}
+    {areaSlug === "painters-waipahu-hi" && <PaintersWaipahu client:load />}
+  </body>
+</html>

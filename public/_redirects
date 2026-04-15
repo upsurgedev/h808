@@ -1,0 +1,18 @@
+# Redirect old service-areas slugs to canonical painter pages
+/service-areas/honolulu /painters-honolulu-hi 301
+/service-areas/kailua /painters-kailua-hi 301
+/service-areas/kaneohe /painters-kaneohe-hi 301
+/service-areas/pearl-city /painters-pearl-city-hi 301
+/service-areas/kapolei /painters-kapolei-hi 301
+/service-areas/ewa-beach /painters-ewa-beach-hi 301
+/service-areas/mililani /painters-mililani-hi 301
+/service-areas/waipahu /painters-waipahu-hi 301
+/service-areas/north-shore /painters-north-shore-hi 301
+/service-areas/hawaii-kai /painters-hawaii-kai-hi 301
+/service-areas/kahala /painters-kahala-diamond-head-hi 301
+/service-areas/wahiawa /painters-north-shore-hi 301
+/service-areas/waianae /painters-north-shore-hi 301
+/service-areas/makaha /painters-north-shore-hi 301
+
+# SPA fallback
+/* /index.html 200

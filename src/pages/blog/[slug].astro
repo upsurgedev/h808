@@ -1,0 +1,35 @@
+---
+import BlogPostPage from "../../react-pages/blog/post.tsx";
+import { blogPosts } from "../../mocks/blog.ts";
+
+export function getStaticPaths() {
+  return blogPosts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+import "../../styles/global.css";
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{post.title} | Hawaii Painters 808</title>
+    <meta name="description" content={post.excerpt} />
+    <link rel="canonical" href={`https://housepaintershonolulu.com/blog/${post.slug}`} />
+    <meta property="og:title" content={`${post.title} | Hawaii Painters 808`} />
+    <meta property="og:description" content={post.excerpt} />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content={`https://housepaintershonolulu.com/blog/${post.slug}`} />
+    <meta property="og:image" content={post.image} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" />
+  </head>
+  <body>
+    <BlogPostPage client:load slug={post.slug} />
+  </body>
+</html>

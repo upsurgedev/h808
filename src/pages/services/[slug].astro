@@ -1,0 +1,81 @@
+---
+import InteriorPaintingPage from "../../react-pages/interior-painting/page.tsx";
+import ExteriorPaintingPage from "../../react-pages/exterior-painting/page.tsx";
+import ResidentialPaintingPage from "../../react-pages/residential-painting/page.tsx";
+import CommercialPaintingPage from "../../react-pages/commercial-painting/page.tsx";
+import CabinetPaintingPage from "../../react-pages/cabinet-painting/page.tsx";
+import DrywallPage from "../../react-pages/drywall/page.tsx";
+import ServicePage from "../../react-pages/service/page.tsx";
+
+export function getStaticPaths() {
+  return [
+    { params: { slug: "interior-painting" } },
+    { params: { slug: "exterior-painting" } },
+    { params: { slug: "residential-painting" } },
+    { params: { slug: "commercial-painting" } },
+    { params: { slug: "cabinet-painting" } },
+    { params: { slug: "drywall" } },
+  ];
+}
+
+const { slug } = Astro.params;
+
+const pageMeta: Record<string, { title: string; desc: string }> = {
+  "interior-painting": {
+    title: "Interior Painting Oahu | Hawaii Painters 808 | Free Estimates",
+    desc: "Professional interior painting on Oahu. Sherwin-Williams Duration paint built for Hawaii's humidity. Licensed, insured. Free estimates. Call 808-272-3816.",
+  },
+  "exterior-painting": {
+    title: "Exterior Painting Oahu | Hawaii Painters 808 | Free Estimates",
+    desc: "Exterior painting built for Hawaii's salt air, UV, and humidity. Sherwin-Williams Duration. Licensed, insured. Free estimates. Call 808-272-3816.",
+  },
+  "residential-painting": {
+    title: "Residential Painting Oahu | Hawaii Painters 808 | Free Estimates",
+    desc: "Full home painting on Oahu — interior and exterior. Sherwin-Williams Duration. Licensed, insured. Free estimates. Call 808-272-3816.",
+  },
+  "commercial-painting": {
+    title: "Commercial Painting Oahu | Hawaii Painters 808 | Free Estimates",
+    desc: "Commercial painting for offices, retail, and restaurants on Oahu. We work around your schedule. Licensed, insured. Free estimates. Call 808-272-3816.",
+  },
+  "cabinet-painting": {
+    title: "Cabinet Painting Oahu | Hawaii Painters 808 | Free Estimates",
+    desc: "Professional cabinet painting on Oahu. Fraction of replacement cost. Sanded, primed, and finished properly. Free estimates. Call 808-272-3816.",
+  },
+  "drywall": {
+    title: "Drywall Repair Oahu | Hawaii Painters 808 | Free Estimates",
+    desc: "Drywall repair, skim coating, and popcorn ceiling removal on Oahu. We fix it right before we paint. Licensed, insured. Free estimates. Call 808-272-3816.",
+  },
+};
+
+const meta = pageMeta[slug] ?? {
+  title: `${slug.replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase())} | Hawaii Painters 808`,
+  desc: "Professional painting services on Oahu. Licensed, insured. Free estimates. Call 808-272-3816.",
+};
+import "../../styles/global.css";
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{meta.title}</title>
+    <meta name="description" content={meta.desc} />
+    <link rel="canonical" href={`https://housepaintershonolulu.com/services/${slug}`} />
+    <meta property="og:title" content={meta.title} />
+    <meta property="og:description" content={meta.desc} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={`https://housepaintershonolulu.com/services/${slug}`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" />
+  </head>
+  <body>
+    {slug === "interior-painting" && <InteriorPaintingPage client:load />}
+    {slug === "exterior-painting" && <ExteriorPaintingPage client:load />}
+    {slug === "residential-painting" && <ResidentialPaintingPage client:load />}
+    {slug === "commercial-painting" && <CommercialPaintingPage client:load />}
+    {slug === "cabinet-painting" && <CabinetPaintingPage client:load />}
+    {slug === "drywall" && <DrywallPage client:load />}
+    {!["interior-painting","exterior-painting","residential-painting","commercial-painting","cabinet-painting","drywall"].includes(slug) && <ServicePage client:load slug={slug} />}
+  </body>
+</html>
