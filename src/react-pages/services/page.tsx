@@ -1,6 +1,7 @@
 import Navbar from "@/components/feature/Navbar";
 import Footer from "@/components/feature/Footer";
 import { services } from "@/mocks/data";
+import AreaContactSection from "@/components/feature/AreaContactSection";
 
 const serviceImages: Record<string, string> = {
   "interior-painting": "/images/card-interior.jpg",
@@ -158,44 +159,18 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="relative overflow-hidden bg-[#1a1a1a] py-20 px-6 md:px-16">
-        <div className="absolute inset-0">
-          <img
-            src="/images/cta-services.jpg"
-            alt=""
-            className="w-full h-full object-cover object-top opacity-20"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a] via-[#1a1a1a]/90 to-[#1a1a1a]/70"></div>
-        </div>
-        <div className="relative max-w-3xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-[#4a9fa5]/20 text-[#4a9fa5] font-black text-xs tracking-widest px-4 py-2 rounded-full mb-6 uppercase">
-            Ready to Get Started?
-          </div>
-          <h2 className="text-white font-black italic text-4xl md:text-5xl uppercase leading-tight mb-5">
-            Get Your Free<br />
-            <span className="text-[#4a9fa5]">Estimate Today</span>
-          </h2>
-          <p className="text-white/70 text-lg leading-relaxed mb-10">
-            Tell us about your project and we'll get back to you within 2 hours. No pressure, no obligation — just a straight answer on what it'll take.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href="/contact"
-              className="flex items-center gap-2 bg-[#4a9fa5] hover:bg-[#3d8a8f] text-white font-black text-sm tracking-wider px-8 py-4 rounded-full transition-all cursor-pointer whitespace-nowrap"
-            >
-              <i className="ri-file-list-3-line"></i>
-              GET FREE ESTIMATE
-            </a>
-            <a
-              href="tel:+18082723816"
-              className="flex items-center gap-2 bg-white/10 border-2 border-white hover:bg-white hover:text-[#1a1a1a] text-white font-black text-sm tracking-wider px-8 py-4 rounded-full transition-all cursor-pointer whitespace-nowrap"
-            >
-              <i className="ri-phone-fill"></i>
-              (808) 272-3816
-            </a>
-          </div>
-        </div>
-      </section>
+      <AreaContactSection
+        city="Painting Services"
+        sourcePage="services"
+        description="Tell us about your project and our team will get back to you within 2 hours. No pressure, no obligation — just a straight answer on what it'll take."
+        trustItems={[
+          "Licensed & Insured in Hawaii",
+          "1-Year Workmanship Warranty",
+          "5-Star Rated on Google & Yelp",
+          "Sherwin-Williams Duration Paint",
+          "Free On-Site Estimate",
+        ]}
+      />
 
       <Footer />
     </main>
