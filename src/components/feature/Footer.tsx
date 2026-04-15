@@ -23,7 +23,7 @@ const areaLinks = [
 ];
 
 const companyLinks = [
-  { label: "About Lopaka", href: "/about" },
+  { label: "About Us", href: "/about" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
   { label: "Get Free Quote", href: "/contact" },
@@ -39,13 +39,13 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="mb-4">
               <img
-                src="https://storage.readdy-site.link/project_files/4b03d90a-3e92-41f2-89f6-2a6d0d0ed1c4/70a92d63-4fc6-4df7-8a85-7c5ff53fbb09_white_logo_with_text.png?v=0a7c89a6433a16058044aea1981576ce"
+                src="/images/logo-with-text.png"
                 alt="Hawaii Painters 808"
                 className="h-14 w-auto object-contain"
               />
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-5">
-              Locally owned by Lopaka. Serving Honolulu and all of Oʻahu since 2012. Licensed, insured, and built on honest work done with pride.
+              Locally owned and operated. Serving Honolulu and all of Oʻahu since 2012. Licensed, insured, and built on honest work done with pride.
             </p>
 
           </div>

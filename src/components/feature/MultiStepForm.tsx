@@ -107,13 +107,7 @@ export default function MultiStepForm({ sourcePage }: MultiStepFormProps) {
         source_page: sourcePage,
       });
 
-      const [res] = await Promise.all([
-        fetch("https://readdy.ai/api/form/d7faetkq2rhf4jj5qhu0", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: body.toString(),
-        }),
-        supabase.from("leads").insert({
+      const { error: dbError } = await supabase.from("leads").insert({
           name: form.name,
           email: form.email,
           phone: form.phone,
@@ -124,10 +118,9 @@ export default function MultiStepForm({ sourcePage }: MultiStepFormProps) {
           urgency_followup: followupLabel,
           message: form.notes,
           source_page: sourcePage,
-        }),
-      ]);
+        });
 
-      if (!res.ok) throw new Error("Submission failed");
+      if (dbError) throw new Error("Submission failed");
       setStep("done");
     } catch {
       setError("Something went wrong. Please try again or call us directly.");
@@ -166,7 +159,7 @@ export default function MultiStepForm({ sourcePage }: MultiStepFormProps) {
   }
 
   return (
-    <form data-readdy-form className="w-full" onSubmit={(e) => e.preventDefault()}>
+    <form className="w-full" onSubmit={(e) => e.preventDefault()}>
       {/* Progress Bar */}
       <div className="mb-8">
         <div className="flex items-center justify-between mb-2">
