@@ -144,7 +144,7 @@ export default function MultiStepForm({ sourcePage }: MultiStepFormProps) {
         </div>
         <h2 className="text-[#1a1a1a] font-black text-3xl mb-3">You're All Set!</h2>
         <p className="text-[#1a1a1a]/60 text-base max-w-sm leading-relaxed">
-          Thanks {form.name.split(" ")[0] || "there"}! Hawaii Painters 808 will personally reach out to you soon. We appreciate your interest!
+          Thanks {form.name.split(" ")[0] || "there"}! Our team will reach out to you soon. We appreciate your interest!
         </p>
         <div className="mt-8 bg-[#f5f5f0] rounded-2xl px-8 py-5 text-left max-w-sm w-full">
           <p className="text-xs font-black tracking-widest text-[#4a9fa5] uppercase mb-3">Your Request Summary</p>
@@ -316,7 +316,7 @@ export default function MultiStepForm({ sourcePage }: MultiStepFormProps) {
         <StepWrapper
           icon="ri-user-3-line"
           question="Almost done — what's your name?"
-          sub="So Hawaii Painters 808 knows who to reach out to"
+          sub="So we know who to reach out to"
         >
           <input
             type="text" name="name" value={form.name}
@@ -335,7 +335,7 @@ export default function MultiStepForm({ sourcePage }: MultiStepFormProps) {
       {step === "phone" && (
         <StepWrapper
           icon="ri-phone-line"
-          question="Best number for us to call?"
+          question="Best number to reach you?"
           sub="Your free estimate is one step away"
         >
           <input

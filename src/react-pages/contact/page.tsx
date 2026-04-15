@@ -45,7 +45,7 @@ export default function ContactPage() {
             Get Your Free Quote
           </h1>
           <p className="text-white/60 text-lg max-w-xl mx-auto leading-relaxed">
-            Tell us about your project and Hawaii Painters 808 will personally reach out with an honest, no-pressure estimate.
+            Tell us about your project and our team will personally reach out with an honest, no-pressure estimate.
           </p>
         </div>
       </section>
@@ -175,8 +175,8 @@ export default function ContactPage() {
                 {
                   step: "01",
                   icon: "ri-file-search-line",
-                  title: "Hawaii Painters 808 Reviews Your Request",
-                  desc: "Every submission goes straight to us — not a call center. We review your project details personally, usually within a few hours.",
+                  title: "Our Team Reviews Your Request",
+                  desc: "Every submission goes straight to our team — not a call center. We review your project details personally, usually within a few hours.",
                   tag: "Within hours",
                   tagIcon: "ri-time-line",
                 },
