@@ -94,7 +94,7 @@ export default function MultiStepForm({ sourcePage }: MultiStepFormProps) {
         form.urgency === "month" ? `Target Date: ${form.targetDate}` :
         `Budget Range: ${form.budget}`;
 
-      const body = new URLSearchParams({
+      const { error: insertError } = await supabase.from("leads").insert({
         name: form.name,
         email: form.email,
         phone: form.phone,
@@ -103,24 +103,11 @@ export default function MultiStepForm({ sourcePage }: MultiStepFormProps) {
         property_type: form.property,
         urgency: urgencyLabel,
         urgency_followup: followupLabel,
-        notes: form.notes,
+        message: form.notes,
         source_page: sourcePage,
       });
 
-      const { error: dbError } = await supabase.from("leads").insert({
-          name: form.name,
-          email: form.email,
-          phone: form.phone,
-          address: form.address,
-          service: form.service,
-          property_type: form.property,
-          urgency: urgencyLabel,
-          urgency_followup: followupLabel,
-          message: form.notes,
-          source_page: sourcePage,
-        });
-
-      if (dbError) throw new Error("Submission failed");
+      if (insertError) throw new Error("Submission failed");
       setStep("done");
     } catch {
       setError("Something went wrong. Please try again or call us directly.");
@@ -137,7 +124,7 @@ export default function MultiStepForm({ sourcePage }: MultiStepFormProps) {
         </div>
         <h2 className="text-[#1a1a1a] font-black text-3xl mb-3">You're All Set!</h2>
         <p className="text-[#1a1a1a]/60 text-base max-w-sm leading-relaxed">
-          Thanks {form.name.split(" ")[0] || "there"}! Our team will reach out to you soon. We appreciate your interest!
+          Thanks {form.name.split(" ")[0] || "there"}! Lopaka will personally reach out to you soon. We appreciate you choosing Hawaii Painters 808.
         </p>
         <div className="mt-8 bg-[#f5f5f0] rounded-2xl px-8 py-5 text-left max-w-sm w-full">
           <p className="text-xs font-black tracking-widest text-[#4a9fa5] uppercase mb-3">Your Request Summary</p>
@@ -159,7 +146,7 @@ export default function MultiStepForm({ sourcePage }: MultiStepFormProps) {
   }
 
   return (
-    <form className="w-full" onSubmit={(e) => e.preventDefault()}>
+    <form data-readdy-form className="w-full" onSubmit={(e) => e.preventDefault()}>
       {/* Progress Bar */}
       <div className="mb-8">
         <div className="flex items-center justify-between mb-2">
@@ -309,7 +296,7 @@ export default function MultiStepForm({ sourcePage }: MultiStepFormProps) {
         <StepWrapper
           icon="ri-user-3-line"
           question="Almost done — what's your name?"
-          sub="So we know who to reach out to"
+          sub="So Lopaka knows who to reach out to"
         >
           <input
             type="text" name="name" value={form.name}
@@ -328,7 +315,7 @@ export default function MultiStepForm({ sourcePage }: MultiStepFormProps) {
       {step === "phone" && (
         <StepWrapper
           icon="ri-phone-line"
-          question="Best number to reach you?"
+          question="Best number for Lopaka to call?"
           sub="Your free estimate is one step away"
         >
           <input
@@ -359,7 +346,7 @@ export default function MultiStepForm({ sourcePage }: MultiStepFormProps) {
               }
             </button>
           </div>
-
+          <p className="text-center text-xs text-[#1a1a1a]/30 mt-3">No spam. Lopaka calls personally — usually same day.</p>
         </StepWrapper>
       )}
     </form>
