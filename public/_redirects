@@ -13,6 +13,3 @@
 /service-areas/wahiawa /painters-north-shore-hi 301
 /service-areas/waianae /painters-north-shore-hi 301
 /service-areas/makaha /painters-north-shore-hi 301
-
-# SPA fallback
-/* /index.html 200
