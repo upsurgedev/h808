@@ -152,84 +152,123 @@ export default function ContactPage() {
       </section>
 
       {/* What Happens Next */}
-      <section className="w-full px-6 md:px-16 pb-16">
+      <section className="w-full px-6 md:px-16 pb-20">
         <div className="max-w-6xl mx-auto">
-          <div className="bg-[#1a1a1a] rounded-2xl px-10 py-12 overflow-hidden relative">
-            {/* subtle teal glow top-right */}
-            <div className="absolute -top-16 -right-16 w-64 h-64 bg-[#4a9fa5]/10 rounded-full blur-3xl pointer-events-none"></div>
-
-            <div className="text-center mb-10">
-              <div className="inline-flex items-center gap-2 bg-[#4a9fa5]/20 border border-[#4a9fa5]/40 text-[#4a9fa5] font-black text-xs tracking-widest px-4 py-2 rounded-full mb-4 uppercase">
-                <i className="ri-checkbox-circle-line"></i>
-                After You Submit
-              </div>
-              <h2 className="text-white font-black text-2xl md:text-3xl">What Happens Next?</h2>
-              <p className="text-white/40 text-sm mt-2">No waiting around. Here&apos;s exactly what to expect.</p>
+          {/* Section header */}
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
+            <div>
+              <span className="text-[#4a9fa5] font-black text-xs tracking-widest uppercase">After You Submit</span>
+              <h2 className="text-[#1a1a1a] font-black text-3xl md:text-4xl mt-1 leading-tight">
+                What Happens Next?
+              </h2>
             </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-0 relative">
-              {/* connector line — desktop only */}
-              <div className="hidden md:block absolute top-12 left-[calc(16.66%+1rem)] right-[calc(16.66%+1rem)] h-px bg-[#4a9fa5]/25 z-0"></div>
-
-              {[
-                {
-                  step: "01",
-                  icon: "ri-file-search-line",
-                  title: "Our Team Reviews Your Request",
-                  desc: "Every submission goes straight to our team — not a call center. We review your project details personally, usually within a few hours.",
-                  tag: "Within hours",
-                  tagIcon: "ri-time-line",
-                },
-                {
-                  step: "02",
-                  icon: "ri-phone-line",
-                  title: "Personal Call Within 24 Hours",
-                  desc: "We call you directly to ask a few quick questions, confirm your address, and schedule a time that works for you.",
-                  tag: "Within 24 hrs",
-                  tagIcon: "ri-phone-fill",
-                },
-                {
-                  step: "03",
-                  icon: "ri-home-smile-line",
-                  title: "Free On-Site Estimate",
-                  desc: "We come to your property, walk the job, and give you a detailed written estimate — completely free, zero pressure.",
-                  tag: "100% Free",
-                  tagIcon: "ri-gift-line",
-                },
-              ].map((item) => (
-                <div key={item.step} className="relative z-10 flex flex-col items-center text-center px-6 py-2">
-                  {/* Step circle */}
-                  <div className="w-20 h-20 flex items-center justify-center rounded-full bg-[#4a9fa5]/15 border-2 border-[#4a9fa5]/40 mb-5 relative">
-                    <i className={`${item.icon} text-[#4a9fa5] text-2xl`}></i>
-                    <div className="absolute -top-2 -right-2 w-6 h-6 flex items-center justify-center bg-[#4a9fa5] rounded-full text-white font-black text-[10px]">
-                      {item.step}
-                    </div>
-                  </div>
-                  <h3 className="text-white font-black text-base mb-2 leading-snug">{item.title}</h3>
-                  <p className="text-white/45 text-sm leading-relaxed mb-4">{item.desc}</p>
-                  <div className="inline-flex items-center gap-1.5 bg-[#4a9fa5]/10 border border-[#4a9fa5]/30 text-[#4a9fa5] text-xs font-bold px-3 py-1.5 rounded-full">
-                    <i className={`${item.tagIcon} text-xs`}></i>
-                    {item.tag}
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Bottom CTA strip */}
-            <div className="mt-10 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-              <p className="text-white/40 text-sm text-center sm:text-left">
-                Prefer to skip the form? Call us directly — we pick up.
-              </p>
-              <a
-                href="tel:8082723816"
-                className="inline-flex items-center gap-2.5 bg-[#4a9fa5] hover:bg-[#3d8a8f] text-white font-black text-sm px-6 py-3 rounded-full transition-colors cursor-pointer whitespace-nowrap"
+            <p className="text-[#1a1a1a]/40 text-sm max-w-xs md:text-right leading-relaxed">
+              No waiting around, no call centers.<br />Here&apos;s exactly what to expect.
+            </p>
+          </div>
+          {/* Steps */}
+          <div className="flex flex-col gap-4">
+            {[
+              {
+                num: "01",
+                icon: "ri-file-search-line",
+                title: "Our Team Reviews Your Request",
+                desc: "Every submission goes straight to our team — not a call center. We read your project details personally and start putting together the right approach for your home.",
+                badge: "Within a few hours",
+                badgeIcon: "ri-time-line",
+                highlight: false,
+              },
+              {
+                num: "02",
+                icon: "ri-phone-line",
+                title: "You Get a Personal Call",
+                desc: "We call you directly — no assistant, no script. We'll ask a few quick questions, confirm your address, and lock in a time that works for your schedule.",
+                badge: "Within 24 hours",
+                badgeIcon: "ri-phone-fill",
+                highlight: true,
+              },
+              {
+                num: "03",
+                icon: "ri-home-smile-line",
+                title: "Free On-Site Estimate",
+                desc: "We come to your property, walk the job with you, and hand you a detailed written estimate on the spot. No pressure, no obligation — completely free.",
+                badge: "100% Free",
+                badgeIcon: "ri-gift-line",
+                highlight: false,
+              },
+            ].map((step) => (
+              <div
+                key={step.num}
+                className={`relative flex flex-col sm:flex-row items-start gap-6 rounded-2xl px-8 py-7 overflow-hidden transition-all ${
+                  step.highlight
+                    ? "bg-[#1a1a1a] text-white"
+                    : "bg-white border border-[#e8e8e0]"
+                }`}
               >
-                <div className="w-4 h-4 flex items-center justify-center">
-                  <i className="ri-phone-fill text-sm"></i>
+                {/* Big ghost number */}
+                <div
+                  className={`absolute right-6 top-1/2 -translate-y-1/2 font-black text-[7rem] leading-none select-none pointer-events-none ${
+                    step.highlight ? "text-white/5" : "text-[#1a1a1a]/[0.04]"
+                  }`}
+                >
+                  {step.num}
                 </div>
-                808-272-3816
-              </a>
-            </div>
+                {/* Icon block */}
+                <div
+                  className={`w-14 h-14 flex items-center justify-center rounded-xl flex-shrink-0 ${
+                    step.highlight
+                      ? "bg-[#4a9fa5] text-white"
+                      : "bg-[#4a9fa5]/10 text-[#4a9fa5]"
+                  }`}
+                >
+                  <i className={`${step.icon} text-2xl`}></i>
+                </div>
+                {/* Content */}
+                <div className="flex-1 relative z-10">
+                  <div className="flex flex-wrap items-center gap-3 mb-2">
+                    <h3
+                      className={`font-black text-lg leading-snug ${
+                        step.highlight ? "text-white" : "text-[#1a1a1a]"
+                      }`}
+                    >
+                      {step.title}
+                    </h3>
+                    <span
+                      className={`inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap ${
+                        step.highlight
+                          ? "bg-[#4a9fa5]/25 text-[#4a9fa5]"
+                          : "bg-[#4a9fa5]/10 text-[#4a9fa5]"
+                      }`}
+                    >
+                      <i className={`${step.badgeIcon} text-xs`}></i>
+                      {step.badge}
+                    </span>
+                  </div>
+                  <p
+                    className={`text-sm leading-relaxed max-w-xl ${
+                      step.highlight ? "text-white/55" : "text-[#1a1a1a]/50"
+                    }`}
+                  >
+                    {step.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+          {/* Bottom CTA */}
+          <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 px-2">
+            <p className="text-[#1a1a1a]/40 text-sm">
+              Prefer to skip the form? Call us directly — we pick up.
+            </p>
+            <a
+              href="tel:8082723816"
+              className="inline-flex items-center gap-2.5 bg-[#1a1a1a] hover:bg-[#333] text-white font-black text-sm px-6 py-3 rounded-full transition-colors cursor-pointer whitespace-nowrap"
+            >
+              <div className="w-4 h-4 flex items-center justify-center">
+                <i className="ri-phone-fill text-sm"></i>
+              </div>
+              808-272-3816
+            </a>
           </div>
         </div>
       </section>
