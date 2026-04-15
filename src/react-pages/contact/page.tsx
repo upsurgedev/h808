@@ -169,7 +169,7 @@ export default function ContactPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-0 relative">
               {/* connector line — desktop only */}
-              <div className="hidden md:block absolute top-10 left-[calc(16.66%+1rem)] right-[calc(16.66%+1rem)] h-px bg-[#4a9fa5]/25 z-0"></div>
+              <div className="hidden md:block absolute top-12 left-[calc(16.66%+1rem)] right-[calc(16.66%+1rem)] h-px bg-[#4a9fa5]/25 z-0"></div>
 
               {[
                 {
