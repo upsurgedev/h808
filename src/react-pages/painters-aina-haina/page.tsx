@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+// react-router-dom removed — using plain <a> tags for Astro SSG compatibility
 import Navbar from "@/components/feature/Navbar";
 import Footer from "@/components/feature/Footer";
 import NearbyAreas from "@/components/feature/NearbyAreas";
@@ -157,9 +157,9 @@ export default function PaintersAinaHainaPage() {
         </div>
         <div className="relative w-full px-6 md:px-16 pt-32 pb-20">
           <nav className="flex items-center gap-2 text-sm text-white/60 mb-6 flex-wrap">
-            <Link to="/" className="hover:text-white transition-colors cursor-pointer">Home</Link>
+            <a href="/" className="hover:text-white transition-colors cursor-pointer">Home</a>
             <i className="ri-arrow-right-s-line"></i>
-            <Link to="/service-areas" className="hover:text-white transition-colors cursor-pointer">Service Areas</Link>
+            <a href="/service-areas" className="hover:text-white transition-colors cursor-pointer">Service Areas</a>
             <i className="ri-arrow-right-s-line"></i>
             <span className="text-white/90">Aina Haina</span>
           </nav>
@@ -369,9 +369,9 @@ export default function PaintersAinaHainaPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((s) => (
-              <Link
+              <a
                 key={s.slug}
-                to={`/services/${s.slug}`}
+                href={`/services/${s.slug}`}
                 className="group bg-[#f5f5f5] border border-gray-200 hover:border-[#4a9fa5] rounded-xl p-6 hover:-translate-y-1 transition-all cursor-pointer block"
               >
                 <div className="w-10 h-10 flex items-center justify-center bg-[#4a9fa5] rounded-full mb-3">
@@ -382,7 +382,7 @@ export default function PaintersAinaHainaPage() {
                 <div className="flex items-center gap-1 mt-3 text-[#4a9fa5] font-bold text-sm group-hover:gap-2 transition-all">
                   Learn More <i className="ri-arrow-right-line"></i>
                 </div>
-              </Link>
+              </a>
             ))}
           </div>
         </div>
