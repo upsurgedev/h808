@@ -93,7 +93,7 @@ export const primaryAreas = [
     name: "Hawaii Kai",
     slug: "hawaii-kai",
     href: "/painters-hawaii-kai-hi",
-    subLocations: ["Portlock", "Aina Haina", "Kuliouou", "Haiku Plantations", "Mariners Ridge", "Kalama Valley"],
+    subLocations: ["Portlock", "Kuliouou", "Haiku Plantations", "Mariners Ridge", "Kalama Valley"],
     image: "/images/mock-hawaii-kai.jpg",
   },
   {
@@ -167,6 +167,14 @@ export const primaryAreas = [
     href: null,
     subLocations: ["Makaha Valley", "Keaau", "Mauna Lahilahi", "Papailoa"],
     image: "/images/mock-makaha.jpg",
+  },
+  {
+    id: "aina-haina",
+    name: "Aina Haina",
+    slug: "aina-haina",
+    href: "/painters-aina-haina-hi",
+    subLocations: ["Aina Haina Valley", "Niu Valley", "Kuliouou", "Aina Haina Beach", "Niu Beach"],
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663226334926/UsGLKjXMkexk58nURYsnLB/aina-haina-hub_e4e5c0e0.jpg",
   },
 ];
 

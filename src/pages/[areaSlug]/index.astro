@@ -10,6 +10,7 @@ import PaintersEwaBeachPage from "../../react-pages/painters-ewa-beach/page.tsx"
 import PaintersNorthShorePage from "../../react-pages/painters-north-shore/page.tsx";
 import PaintersMililaniPage from "../../react-pages/painters-mililani/page.tsx";
 import PaintersWaipahu from "../../react-pages/painters-waipahu/page.tsx";
+import PaintersAinaHainaPage from "../../react-pages/painters-aina-haina/page.tsx";
 
 export function getStaticPaths() {
   return [
@@ -24,6 +25,7 @@ export function getStaticPaths() {
     { params: { areaSlug: "painters-north-shore-hi" } },
     { params: { areaSlug: "painters-mililani-hi" } },
     { params: { areaSlug: "painters-waipahu-hi" } },
+    { params: { areaSlug: "painters-aina-haina-hi" } },
   ];
 }
 
@@ -73,6 +75,10 @@ const areaMeta: Record<string, { title: string; desc: string }> = {
   "painters-waipahu-hi": {
     title: "Painters in Waipahu HI | Hawaii Painters 808 | Free Estimates",
     desc: "Professional painting contractor in Waipahu, Hawaii. Interior, exterior, cabinet painting. Licensed, insured. Free estimates. Call 808-272-3816.",
+  },
+  "painters-aina-haina-hi": {
+    title: "Painters in Aina Haina HI | Hawaii Painters 808 | Free Estimates",
+    desc: "Professional painting contractor in Aina Haina, east Honolulu. Interior, exterior, cabinet painting. Licensed, insured. Free estimates. Call 808-272-3816.",
   },
 };
 
@@ -541,6 +547,10 @@ import "../../styles/global.css";
               <span class="hp808-dropdown-icon"><i class="ri-community-line"></i></span>
               Waipahu
             </a>
+            <a href="/painters-aina-haina-hi" class="hp808-dropdown-item">
+              <span class="hp808-dropdown-icon"><i class="ri-home-heart-line"></i></span>
+              Aina Haina
+            </a>
           </div>
         </div>
       </div>
@@ -595,6 +605,7 @@ import "../../styles/global.css";
       <a href="/painters-north-shore-hi" class="hp808-mobile-submenu-link">NORTH SHORE</a>
       <a href="/painters-mililani-hi" class="hp808-mobile-submenu-link">MILILANI</a>
       <a href="/painters-waipahu-hi" class="hp808-mobile-submenu-link">WAIPAHU</a>
+      <a href="/painters-aina-haina-hi" class="hp808-mobile-submenu-link">AINA HAINA</a>
     </div>
 
     <a href="/about" class="hp808-mobile-nav-link">ABOUT</a>
@@ -618,6 +629,7 @@ import "../../styles/global.css";
     {areaSlug === "painters-north-shore-hi" && <PaintersNorthShorePage client:load />}
     {areaSlug === "painters-mililani-hi" && <PaintersMililaniPage client:load />}
     {areaSlug === "painters-waipahu-hi" && <PaintersWaipahu client:load />}
+    {areaSlug === "painters-aina-haina-hi" && <PaintersAinaHainaPage client:load />}
   
 <script>
   (function() {

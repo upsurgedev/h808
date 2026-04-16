@@ -108,8 +108,17 @@ const areas = [
     href: "/painters-hawaii-kai-hi",
     hasDedicatedPage: true,
     icon: "ri-sailboat-line",
-    neighborhoods: ["Portlock", "Kuliouou", "Aina Haina", "Hahaione", "Kalama Valley", "Mariners Ridge"],
+    neighborhoods: ["Portlock", "Kuliouou", "Hahaione", "Kalama Valley", "Mariners Ridge"],
     image: "/images/hub-hawaii-kai.jpg",
+  },
+  {
+    name: "Aina Haina",
+    region: "East Honolulu",
+    href: "/painters-aina-haina-hi",
+    hasDedicatedPage: true,
+    icon: "ri-home-heart-line",
+    neighborhoods: ["Aina Haina Valley", "Niu Valley", "Kuliouou", "Aina Haina Beach", "Niu Beach"],
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663226334926/UsGLKjXMkexk58nURYsnLB/aina-haina-hub_e4e5c0e0.jpg",
   },
   {
     name: "Makaha",

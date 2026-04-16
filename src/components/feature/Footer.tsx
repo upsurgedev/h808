@@ -19,6 +19,7 @@ const areaLinks = [
   { label: "Kapolei", href: "/painters-kapolei-hi" },
   { label: "Ewa Beach", href: "/painters-ewa-beach-hi" },
   { label: "Hawaii Kai", href: "/painters-hawaii-kai-hi" },
+  { label: "Aina Haina", href: "/painters-aina-haina-hi" },
   { label: "North Shore", href: "/painters-north-shore-hi" },
 ];
 

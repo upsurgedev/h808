@@ -20,7 +20,7 @@ const ALL_AREAS: AreaLink[] = [
     region: "East Oahu",
     href: "/painters-hawaii-kai-hi",
     icon: "ri-sailboat-line",
-    blurb: "Portlock, Aina Haina, Mariners Ridge & east Oahu",
+    blurb: "Portlock, Kuliouou, Mariners Ridge & east Oahu",
   },
   {
     name: "Kahala",
@@ -84,6 +84,13 @@ const ALL_AREAS: AreaLink[] = [
     href: "/painters-waipahu-hi",
     icon: "ri-map-pin-2-line",
     blurb: "Waipahu Town, Village Park, Royal Kunia & Waikele",
+  },
+  {
+    name: "Aina Haina",
+    region: "East Honolulu",
+    href: "/painters-aina-haina-hi",
+    icon: "ri-home-heart-line",
+    blurb: "Aina Haina Valley, Niu Valley, Kuliouou & east Honolulu",
   },
 ];
 
