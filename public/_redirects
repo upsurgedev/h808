@@ -1,3 +1,6 @@
+# Redirect /sitemap.xml to the Astro-generated sitemap index
+/sitemap.xml /sitemap-index.xml 301
+
 # Redirect old service page slugs to new canonical URLs
 /exterior-painting-honolulu /services/exterior-painting 301
 /interior-painting-honolulu-services /services/interior-painting 301
