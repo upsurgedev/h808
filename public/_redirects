@@ -1,3 +1,14 @@
+# Redirect old Google-indexed URLs (flagged as alternate pages with canonical)
+/cabinet-painting-in-honolulu /services/cabinet-painting 301
+/drywall-in-honolulu /services/drywall 301
+/interior-painting-in-honolulu /services/interior-painting 301
+/why-hire-us /about 301
+/about-hawaii-painters-808 /about 301
+/honolulu-painting-advice /blog 301
+/terms-and-conditions /terms 301
+/why-primer-is-the-secret-to-long-lasting-paint-in-hawaii /blog 301
+/why-cheap-paint-doesnt-last-in-hawaiis-salt-air /blog 301
+
 # Redirect old service page slugs to new canonical URLs
 /exterior-painting-honolulu /services/exterior-painting 301
 /interior-painting-honolulu-services /services/interior-painting 301
