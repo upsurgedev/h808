@@ -443,6 +443,68 @@ export const blogPosts: BlogPost[] = [
     },
   },
   {
+    slug: "why-primer-is-the-secret-to-long-lasting-paint-in-hawaii",
+    title: "Why Primer Is the Secret to Long-Lasting Paint in Hawaii",
+    excerpt: "Most paint failures in Hawaii start with one skipped step: primer. Here's why it matters more on Oahu than anywhere else, and what happens when contractors skip it.",
+    category: "Exterior Painting",
+    readTime: "5 min read",
+    date: "April 20, 2026",
+    image: "/images/blog-prep-walls.jpg",
+    content: {
+      intro: "Ask any experienced painter what separates a 10-year paint job from a 4-year one, and the answer is almost always the same: prep and primer. In Hawaii's climate — salt air, intense UV, high humidity — primer isn't optional. It's the foundation everything else depends on.",
+      sections: [
+        {
+          heading: "What Primer Actually Does",
+          body: "Primer creates a bonding layer between the surface and the topcoat. Without it, paint applied directly to bare wood, repaired drywall, or a previously painted surface that's been sanded down has nothing to grip. It may look fine for a year or two, then start peeling from the edges — usually right where the prep was skipped. In Hawaii, primer also acts as a moisture barrier. Wood that absorbs humidity without a sealed primer coat will swell, contract, and eventually push the paint off the surface. We've seen paint jobs fail in under three years because a contractor skipped primer on bare wood trim."
+        },
+        {
+          heading: "When Primer Is Non-Negotiable",
+          body: "Any bare wood — new or exposed from scraping — must be primed before topcoat. Repaired areas where filler or spackle was used need primer to seal the porous surface. Stained or heavily weathered surfaces need a stain-blocking primer to prevent bleed-through. Any surface switching from a dark color to a light one benefits from a tinted primer to reduce the number of topcoats needed."
+        },
+        {
+          heading: "The Mold-Blocking Primer Difference",
+          body: "On the windward side of Oahu and in shaded areas anywhere on the island, we use a mold-blocking primer as standard practice. Regular primer doesn't inhibit mold growth — and in Hawaii's humidity, mold will find its way through paint that isn't properly sealed. A mold-blocking primer adds a layer of protection that extends the life of the topcoat significantly."
+        },
+        {
+          heading: "What to Ask Your Contractor",
+          body: "Before you hire anyone, ask specifically: what primer will you use, and where? A contractor who can't answer that question — or who says they don't use primer — is telling you everything you need to know about the quality of their work."
+        },
+      ],
+      tip: "If a contractor's quote doesn't mention primer, ask why. Skipping primer is the single most common shortcut that causes early paint failure in Hawaii.",
+    },
+  },
+  {
+    slug: "why-cheap-paint-doesnt-last-in-hawaiis-salt-air",
+    title: "Why Cheap Paint Doesn't Last in Hawaii's Salt Air",
+    excerpt: "Hawaii's coastal environment destroys low-quality paint faster than almost anywhere in the country. Here's what's actually happening to your paint, and why the product choice matters.",
+    category: "Exterior Painting",
+    readTime: "5 min read",
+    date: "April 20, 2026",
+    image: "/images/blog-exterior-paint.jpg",
+    content: {
+      intro: "If you've ever noticed a paint job on an Oahu home that looks chalky, faded, or peeling within just a few years, there's a good chance cheap paint was part of the problem. Hawaii's salt air environment is one of the most demanding on exterior coatings in the entire country — and not all paints are built to handle it.",
+      sections: [
+        {
+          heading: "What Salt Air Does to Paint",
+          body: "Salt particles carried in the air settle on exterior surfaces constantly, especially within a mile or two of the coast. Salt is hygroscopic — it attracts and holds moisture. When salt deposits build up on a painted surface, they keep that surface wet longer than it would otherwise be, accelerating the breakdown of the paint film. Cheap paints with lower-quality resins simply can't hold up to this sustained moisture exposure. The result is chalking, peeling, and early failure."
+        },
+        {
+          heading: "UV Compounds the Problem",
+          body: "Hawaii sits at roughly 21 degrees latitude — much closer to the equator than the mainland. UV radiation is more intense year-round, and it degrades paint binders faster. Low-quality paints use cheaper binders that break down under UV exposure, causing the paint to chalk and lose adhesion. Premium paints like Sherwin-Williams Duration use UV-resistant technology that extends the life of the coating significantly."
+        },
+        {
+          heading: "What to Look for in a Paint Product",
+          body: "For Hawaii exteriors, you need a paint that specifies: mildew resistance, UV protection, and a high-quality acrylic resin binder. Duration, Emerald, and Aura are all products we consider appropriate for Hawaii's conditions. Big-box store house brands and contractor-grade budget paints are not — regardless of what the label says."
+        },
+        {
+          heading: "The Cost Difference Is Smaller Than You Think",
+          body: "The difference in material cost between a budget paint and a premium paint on a typical Oahu home is roughly $300–$600. The difference in lifespan is 4–5 years vs. 8–12 years. When you factor in the cost of repainting — labor, prep, disruption — the premium product pays for itself many times over. Any contractor who won't tell you what paint they're using, or who defaults to the cheapest option without explaining why, is not working in your interest."
+        },
+      ],
+      tip: "Always ask your contractor: what paint brand and product are you using? If they can't give you a specific answer, that's a red flag.",
+    },
+  },
+  {
     slug: "choosing-paint-finish-hawaii",
     title: "Which Paint Finish Should You Use? A Room-by-Room Guide",
     excerpt: "Flat, eggshell, satin, semi-gloss — the finish you choose affects how a room looks, how easy it is to clean, and how well it holds up in Hawaii's humidity. Here's the breakdown.",
