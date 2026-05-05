@@ -64,7 +64,7 @@ export default function PaintersEwaBeachPage() {
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", "https://hawaiipainters808.com/painters-ewa-beach-hi");
+    canonical.setAttribute("href", "https://housepaintershonolulu.com/painters-ewa-beach-hi");
 
     const schemaId = "schema-ewa-beach";
     if (!document.getElementById(schemaId)) {
@@ -80,7 +80,7 @@ export default function PaintersEwaBeachPage() {
         "address": { "@type": "PostalAddress", "addressLocality": "Ewa Beach", "addressRegion": "HI", "addressCountry": "US" },
         "areaServed": "Ewa Beach, West Oahu, Hawaii",
         "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" }],
-        "url": "https://hawaiipainters808.com/painters-ewa-beach-hi"
+        "url": "https://housepaintershonolulu.com/painters-ewa-beach-hi"
       });
       document.head.appendChild(script);
     }

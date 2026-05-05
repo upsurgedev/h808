@@ -98,7 +98,7 @@ export default function PrivacyPolicyPage() {
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", "https://hawaiipainters808.com/privacy-policy");
+    canonical.setAttribute("href", "https://housepaintershonolulu.com/privacy-policy");
   }, []);
 
   return (

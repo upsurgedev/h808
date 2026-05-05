@@ -65,7 +65,7 @@ export default function PaintersNorthShorePage() {
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", "https://hawaiipainters808.com/painters-north-shore-hi");
+    canonical.setAttribute("href", "https://housepaintershonolulu.com/painters-north-shore-hi");
 
     const schemaId = "schema-north-shore";
     if (!document.getElementById(schemaId)) {
@@ -81,7 +81,7 @@ export default function PaintersNorthShorePage() {
         "address": { "@type": "PostalAddress", "addressLocality": "Haleiwa", "addressRegion": "HI", "addressCountry": "US" },
         "areaServed": "North Shore, Oahu, Hawaii",
         "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" }],
-        "url": "https://hawaiipainters808.com/painters-north-shore-hi"
+        "url": "https://housepaintershonolulu.com/painters-north-shore-hi"
       });
       document.head.appendChild(script);
     }

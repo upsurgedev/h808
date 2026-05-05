@@ -27,11 +27,11 @@ export default function CommercialPaintingPage() {
     setMeta("og:type", "website", true);
     let canonical = document.querySelector("link[rel='canonical']") as HTMLLinkElement | null;
     if (!canonical) { canonical = document.createElement("link"); canonical.setAttribute("rel", "canonical"); document.head.appendChild(canonical); }
-    canonical.setAttribute("href", "https://hawaiipainters808.com/services/commercial-painting");
+    canonical.setAttribute("href", "https://housepaintershonolulu.com/services/commercial-painting");
     const schemaId = "schema-commercial";
     if (!document.getElementById(schemaId)) {
       const s = document.createElement("script"); s.id = schemaId; s.type = "application/ld+json";
-      s.textContent = JSON.stringify({ "@context": "https://schema.org", "@type": "Service", "name": "Commercial Painting", "provider": { "@type": "LocalBusiness", "name": "Hawaii Painters 808", "telephone": "+18082723816", "address": { "@type": "PostalAddress", "addressLocality": "Honolulu", "addressRegion": "HI", "addressCountry": "US" } }, "areaServed": "Oahu, Hawaii", "description": "Commercial painting services for offices, retail, restaurants, and businesses across Oahu, Hawaii.", "url": "https://hawaiipainters808.com/services/commercial-painting" });
+      s.textContent = JSON.stringify({ "@context": "https://schema.org", "@type": "Service", "name": "Commercial Painting", "provider": { "@type": "LocalBusiness", "name": "Hawaii Painters 808", "telephone": "+18082723816", "address": { "@type": "PostalAddress", "addressLocality": "Honolulu", "addressRegion": "HI", "addressCountry": "US" } }, "areaServed": "Oahu, Hawaii", "description": "Commercial painting services for offices, retail, restaurants, and businesses across Oahu, Hawaii.", "url": "https://housepaintershonolulu.com/services/commercial-painting" });
       document.head.appendChild(s);
     }
     return () => { document.getElementById(schemaId)?.remove(); };

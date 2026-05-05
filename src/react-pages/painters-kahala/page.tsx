@@ -99,7 +99,7 @@ export default function PaintersKahalaPage() {
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", "https://hawaiipainters808.com/painters-kahala-diamond-head-hi");
+    canonical.setAttribute("href", "https://housepaintershonolulu.com/painters-kahala-diamond-head-hi");
 
     const schemaId = "schema-kahala";
     if (!document.getElementById(schemaId)) {
@@ -115,7 +115,7 @@ export default function PaintersKahalaPage() {
         "address": { "@type": "PostalAddress", "addressLocality": "Kahala", "addressRegion": "HI", "addressCountry": "US" },
         "areaServed": "Kahala, Diamond Head, Black Point, Honolulu, Hawaii",
         "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" }],
-        "url": "https://hawaiipainters808.com/painters-kahala-diamond-head-hi"
+        "url": "https://housepaintershonolulu.com/painters-kahala-diamond-head-hi"
       });
       document.head.appendChild(script);
     }

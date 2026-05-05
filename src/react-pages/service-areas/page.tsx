@@ -170,7 +170,7 @@ export default function ServiceAreasPage() {
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", "https://hawaiipainters808.com/service-areas");
+    canonical.setAttribute("href", "https://housepaintershonolulu.com/service-areas");
 
     const schemaId = "schema-service-areas";
     if (!document.getElementById(schemaId)) {
@@ -186,7 +186,7 @@ export default function ServiceAreasPage() {
         "address": { "@type": "PostalAddress", "addressLocality": "Honolulu", "addressRegion": "HI", "addressCountry": "US" },
         "areaServed": areas.map(a => ({ "@type": "City", "name": a.name })),
         "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" }],
-        "url": "https://hawaiipainters808.com/service-areas"
+        "url": "https://housepaintershonolulu.com/service-areas"
       });
       document.head.appendChild(script);
     }

@@ -65,7 +65,7 @@ export default function PaintersMililaniPage() {
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", "https://hawaiipainters808.com/painters-mililani-hi");
+    canonical.setAttribute("href", "https://housepaintershonolulu.com/painters-mililani-hi");
 
     const schemaId = "schema-mililani";
     if (!document.getElementById(schemaId)) {
@@ -81,7 +81,7 @@ export default function PaintersMililaniPage() {
         "address": { "@type": "PostalAddress", "addressLocality": "Mililani", "addressRegion": "HI", "addressCountry": "US" },
         "areaServed": "Mililani, Central Oahu, Hawaii",
         "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" }],
-        "url": "https://hawaiipainters808.com/painters-mililani-hi"
+        "url": "https://housepaintershonolulu.com/painters-mililani-hi"
       });
       document.head.appendChild(script);
     }

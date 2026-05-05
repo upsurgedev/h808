@@ -41,7 +41,7 @@ export default function InteriorPaintingHonoluluPage() {
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", "https://hawaiipainters808.com/painters-honolulu-hi");
+    canonical.setAttribute("href", "https://housepaintershonolulu.com/painters-honolulu-hi");
 
     // Schema.org LocalBusiness structured data
     const schemaId = "schema-interior-honolulu";
@@ -71,7 +71,7 @@ export default function InteriorPaintingHonoluluPage() {
             "closes": "17:00"
           }
         ],
-        "url": "https://hawaiipainters808.com/painters-honolulu-hi"
+        "url": "https://housepaintershonolulu.com/painters-honolulu-hi"
       });
       document.head.appendChild(script);
     }

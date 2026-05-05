@@ -30,7 +30,7 @@ export default function AboutPage() {
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", "https://hawaiipainters808.com/about");
+    canonical.setAttribute("href", "https://housepaintershonolulu.com/about");
 
     const schemaId = "schema-about";
     if (!document.getElementById(schemaId)) {
@@ -45,7 +45,7 @@ export default function AboutPage() {
         "description": "Family-owned painting contractor serving all of Oahu, Hawaii since 1994. Founded by Lopaka, born and raised on Oahu with 30+ years of experience.",
         "telephone": "+18082723816",
         "address": { "@type": "PostalAddress", "addressLocality": "Honolulu", "addressRegion": "HI", "addressCountry": "US" },
-        "url": "https://hawaiipainters808.com/about"
+        "url": "https://housepaintershonolulu.com/about"
       });
       document.head.appendChild(script);
     }

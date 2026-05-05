@@ -23,11 +23,11 @@ export default function BlogPage() {
     setMeta("og:type", "website", true);
     let canonical = document.querySelector("link[rel='canonical']") as HTMLLinkElement | null;
     if (!canonical) { canonical = document.createElement("link"); canonical.setAttribute("rel", "canonical"); document.head.appendChild(canonical); }
-    canonical.setAttribute("href", "https://hawaiipainters808.com/blog");
+    canonical.setAttribute("href", "https://housepaintershonolulu.com/blog");
     const schemaId = "schema-blog";
     if (!document.getElementById(schemaId)) {
       const s = document.createElement("script"); s.id = schemaId; s.type = "application/ld+json";
-      s.textContent = JSON.stringify({ "@context": "https://schema.org", "@type": "Blog", "name": "Hawaii Painters 808 Blog", "description": "Painting tips and advice for Oahu homeowners from Lopaka, owner of Hawaii Painters 808.", "url": "https://hawaiipainters808.com/blog", "publisher": { "@type": "LocalBusiness", "name": "Hawaii Painters 808", "telephone": "+18082723816" } });
+      s.textContent = JSON.stringify({ "@context": "https://schema.org", "@type": "Blog", "name": "Hawaii Painters 808 Blog", "description": "Painting tips and advice for Oahu homeowners from Lopaka, owner of Hawaii Painters 808.", "url": "https://housepaintershonolulu.com/blog", "publisher": { "@type": "LocalBusiness", "name": "Hawaii Painters 808", "telephone": "+18082723816" } });
       document.head.appendChild(s);
     }
     return () => { document.getElementById(schemaId)?.remove(); };

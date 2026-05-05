@@ -113,7 +113,7 @@ export default function TermsPage() {
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", "https://hawaiipainters808.com/terms");
+    canonical.setAttribute("href", "https://housepaintershonolulu.com/terms");
   }, []);
 
   return (

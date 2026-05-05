@@ -65,7 +65,7 @@ export default function PaintersWaipahu() {
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", "https://hawaiipainters808.com/painters-waipahu-hi");
+    canonical.setAttribute("href", "https://housepaintershonolulu.com/painters-waipahu-hi");
 
     const schemaId = "schema-waipahu";
     if (!document.getElementById(schemaId)) {
@@ -81,7 +81,7 @@ export default function PaintersWaipahu() {
         "address": { "@type": "PostalAddress", "addressLocality": "Waipahu", "addressRegion": "HI", "addressCountry": "US" },
         "areaServed": "Waipahu, Royal Kunia, Central Oahu, Hawaii",
         "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" }],
-        "url": "https://hawaiipainters808.com/painters-waipahu-hi"
+        "url": "https://housepaintershonolulu.com/painters-waipahu-hi"
       });
       document.head.appendChild(script);
     }

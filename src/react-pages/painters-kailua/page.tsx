@@ -64,7 +64,7 @@ export default function PaintersKailuaPage() {
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", "https://hawaiipainters808.com/painters-kailua-hi");
+    canonical.setAttribute("href", "https://housepaintershonolulu.com/painters-kailua-hi");
 
     const schemaId = "schema-kailua";
     if (!document.getElementById(schemaId)) {
@@ -80,7 +80,7 @@ export default function PaintersKailuaPage() {
         "address": { "@type": "PostalAddress", "addressLocality": "Kailua", "addressRegion": "HI", "addressCountry": "US" },
         "areaServed": "Kailua, Oahu, Hawaii",
         "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" }],
-        "url": "https://hawaiipainters808.com/painters-kailua-hi"
+        "url": "https://housepaintershonolulu.com/painters-kailua-hi"
       });
       document.head.appendChild(script);
     }

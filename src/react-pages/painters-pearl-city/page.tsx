@@ -64,7 +64,7 @@ export default function PaintersPearlCityPage() {
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", "https://hawaiipainters808.com/painters-pearl-city-hi");
+    canonical.setAttribute("href", "https://housepaintershonolulu.com/painters-pearl-city-hi");
 
     const schemaId = "schema-pearl-city";
     if (!document.getElementById(schemaId)) {
@@ -80,7 +80,7 @@ export default function PaintersPearlCityPage() {
         "address": { "@type": "PostalAddress", "addressLocality": "Pearl City", "addressRegion": "HI", "addressCountry": "US" },
         "areaServed": "Pearl City, Oahu, Hawaii",
         "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" }],
-        "url": "https://hawaiipainters808.com/painters-pearl-city-hi"
+        "url": "https://housepaintershonolulu.com/painters-pearl-city-hi"
       });
       document.head.appendChild(script);
     }

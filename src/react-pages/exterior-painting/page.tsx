@@ -30,11 +30,11 @@ export default function ExteriorPaintingPage() {
     setMeta("og:type", "website", true);
     let canonical = document.querySelector("link[rel='canonical']") as HTMLLinkElement | null;
     if (!canonical) { canonical = document.createElement("link"); canonical.setAttribute("rel", "canonical"); document.head.appendChild(canonical); }
-    canonical.setAttribute("href", "https://hawaiipainters808.com/services/exterior-painting");
+    canonical.setAttribute("href", "https://housepaintershonolulu.com/services/exterior-painting");
     const schemaId = "schema-exterior";
     if (!document.getElementById(schemaId)) {
       const s = document.createElement("script"); s.id = schemaId; s.type = "application/ld+json";
-      s.textContent = JSON.stringify({ "@context": "https://schema.org", "@type": "Service", "name": "Exterior Painting", "provider": { "@type": "LocalBusiness", "name": "Hawaii Painters 808", "telephone": "+18082723816", "address": { "@type": "PostalAddress", "addressLocality": "Honolulu", "addressRegion": "HI", "addressCountry": "US" } }, "areaServed": "Oahu, Hawaii", "description": "Professional exterior painting services for Oahu homes and businesses. Sherwin-Williams Duration paint, full surface prep, two coats minimum.", "url": "https://hawaiipainters808.com/services/exterior-painting" });
+      s.textContent = JSON.stringify({ "@context": "https://schema.org", "@type": "Service", "name": "Exterior Painting", "provider": { "@type": "LocalBusiness", "name": "Hawaii Painters 808", "telephone": "+18082723816", "address": { "@type": "PostalAddress", "addressLocality": "Honolulu", "addressRegion": "HI", "addressCountry": "US" } }, "areaServed": "Oahu, Hawaii", "description": "Professional exterior painting services for Oahu homes and businesses. Sherwin-Williams Duration paint, full surface prep, two coats minimum.", "url": "https://housepaintershonolulu.com/services/exterior-painting" });
       document.head.appendChild(s);
     }
     return () => { document.getElementById(schemaId)?.remove(); };

@@ -99,7 +99,7 @@ export default function PaintersHawaiiKaiPage() {
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", "https://hawaiipainters808.com/painters-hawaii-kai-hi");
+    canonical.setAttribute("href", "https://housepaintershonolulu.com/painters-hawaii-kai-hi");
 
     const schemaId = "schema-hawaii-kai";
     if (!document.getElementById(schemaId)) {
@@ -115,7 +115,7 @@ export default function PaintersHawaiiKaiPage() {
         "address": { "@type": "PostalAddress", "addressLocality": "Hawaii Kai", "addressRegion": "HI", "addressCountry": "US" },
         "areaServed": "Hawaii Kai, Portlock, Aina Haina, Oahu, Hawaii",
         "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" }],
-        "url": "https://hawaiipainters808.com/painters-hawaii-kai-hi"
+        "url": "https://housepaintershonolulu.com/painters-hawaii-kai-hi"
       });
       document.head.appendChild(script);
     }

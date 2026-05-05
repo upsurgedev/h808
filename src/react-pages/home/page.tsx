@@ -33,7 +33,7 @@ export default function HomePage() {
     setMeta("og:title", "Hawaii Painters 808 | Oahu's Trusted Painting Contractor", true);
     setMeta("og:description", "Licensed, insured painting contractor serving all of Oahu since 2012. Interior, exterior, cabinet painting & drywall. Free estimates. Call 808-272-3816.", true);
     setMeta("og:type", "website", true);
-    setMeta("og:url", "https://hawaiipainters808.com", true);
+    setMeta("og:url", "https://housepaintershonolulu.com", true);
     setMeta("twitter:card", "summary_large_image");
     setMeta("twitter:title", "Hawaii Painters 808 | Oahu Painting Contractor");
     setMeta("twitter:description", "Licensed, insured painting contractor serving all of Oahu since 2012. Free estimates. Call 808-272-3816.");
@@ -44,7 +44,7 @@ export default function HomePage() {
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", "https://hawaiipainters808.com");
+    canonical.setAttribute("href", "https://housepaintershonolulu.com");
 
     const schemaId = "schema-homepage";
     if (!document.getElementById(schemaId)) {
@@ -57,7 +57,7 @@ export default function HomePage() {
         "name": "Hawaii Painters 808",
         "description": "Professional painting contractor serving all of Oahu, Hawaii since 2012. Interior painting, exterior painting, cabinet painting, and drywall repair.",
         "telephone": "+18082723816",
-        "url": "https://hawaiipainters808.com",
+        "url": "https://housepaintershonolulu.com",
         "logo": "/images/logo-808.png?v=3d433baea1af8e310a444c6b98ec62f5",
         "image": "/images/logo-808.png?v=3d433baea1af8e310a444c6b98ec62f5",
         "address": {
@@ -89,7 +89,7 @@ export default function HomePage() {
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Drywall Repair" } }
           ]
         },
-        "sameAs": ["https://hawaiipainters808.com"]
+        "sameAs": ["https://housepaintershonolulu.com"]
       });
       document.head.appendChild(script);
     }

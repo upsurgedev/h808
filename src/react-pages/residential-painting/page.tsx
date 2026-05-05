@@ -27,11 +27,11 @@ export default function ResidentialPaintingPage() {
     setMeta("og:type", "website", true);
     let canonical = document.querySelector("link[rel='canonical']") as HTMLLinkElement | null;
     if (!canonical) { canonical = document.createElement("link"); canonical.setAttribute("rel", "canonical"); document.head.appendChild(canonical); }
-    canonical.setAttribute("href", "https://hawaiipainters808.com/services/residential-painting");
+    canonical.setAttribute("href", "https://housepaintershonolulu.com/services/residential-painting");
     const schemaId = "schema-residential";
     if (!document.getElementById(schemaId)) {
       const s = document.createElement("script"); s.id = schemaId; s.type = "application/ld+json";
-      s.textContent = JSON.stringify({ "@context": "https://schema.org", "@type": "Service", "name": "Residential Painting", "provider": { "@type": "LocalBusiness", "name": "Hawaii Painters 808", "telephone": "+18082723816", "address": { "@type": "PostalAddress", "addressLocality": "Honolulu", "addressRegion": "HI", "addressCountry": "US" } }, "areaServed": "Oahu, Hawaii", "description": "Full-service residential painting for Oahu homes. Interior and exterior painting, proper prep, Sherwin-Williams Duration paint.", "url": "https://hawaiipainters808.com/services/residential-painting" });
+      s.textContent = JSON.stringify({ "@context": "https://schema.org", "@type": "Service", "name": "Residential Painting", "provider": { "@type": "LocalBusiness", "name": "Hawaii Painters 808", "telephone": "+18082723816", "address": { "@type": "PostalAddress", "addressLocality": "Honolulu", "addressRegion": "HI", "addressCountry": "US" } }, "areaServed": "Oahu, Hawaii", "description": "Full-service residential painting for Oahu homes. Interior and exterior painting, proper prep, Sherwin-Williams Duration paint.", "url": "https://housepaintershonolulu.com/services/residential-painting" });
       document.head.appendChild(s);
     }
     return () => { document.getElementById(schemaId)?.remove(); };

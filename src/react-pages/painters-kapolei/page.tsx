@@ -64,7 +64,7 @@ export default function PaintersKapoleiPage() {
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", "https://hawaiipainters808.com/painters-kapolei-hi");
+    canonical.setAttribute("href", "https://housepaintershonolulu.com/painters-kapolei-hi");
 
     const schemaId = "schema-kapolei";
     if (!document.getElementById(schemaId)) {
@@ -80,7 +80,7 @@ export default function PaintersKapoleiPage() {
         "address": { "@type": "PostalAddress", "addressLocality": "Kapolei", "addressRegion": "HI", "addressCountry": "US" },
         "areaServed": "Kapolei, West Oahu, Hawaii",
         "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" }],
-        "url": "https://hawaiipainters808.com/painters-kapolei-hi"
+        "url": "https://housepaintershonolulu.com/painters-kapolei-hi"
       });
       document.head.appendChild(script);
     }

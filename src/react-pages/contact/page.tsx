@@ -19,7 +19,7 @@ export default function ContactPage() {
     setMeta("og:type", "website", true);
     let canonical = document.querySelector("link[rel='canonical']") as HTMLLinkElement | null;
     if (!canonical) { canonical = document.createElement("link"); canonical.setAttribute("rel", "canonical"); document.head.appendChild(canonical); }
-    canonical.setAttribute("href", "https://hawaiipainters808.com/contact");
+    canonical.setAttribute("href", "https://housepaintershonolulu.com/contact");
   }, []);
 
   return (

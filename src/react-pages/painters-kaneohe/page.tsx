@@ -64,7 +64,7 @@ export default function PaintersKaneohePage() {
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", "https://hawaiipainters808.com/painters-kaneohe-hi");
+    canonical.setAttribute("href", "https://housepaintershonolulu.com/painters-kaneohe-hi");
 
     const schemaId = "schema-kaneohe";
     if (!document.getElementById(schemaId)) {
@@ -80,7 +80,7 @@ export default function PaintersKaneohePage() {
         "address": { "@type": "PostalAddress", "addressLocality": "Kaneohe", "addressRegion": "HI", "addressCountry": "US" },
         "areaServed": "Kaneohe, Oahu, Hawaii",
         "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" }],
-        "url": "https://hawaiipainters808.com/painters-kaneohe-hi"
+        "url": "https://housepaintershonolulu.com/painters-kaneohe-hi"
       });
       document.head.appendChild(script);
     }

@@ -26,14 +26,14 @@ export default function BlogPostPage({ slug }: { slug?: string }) {
     setMeta("og:description", post.excerpt, true);
     setMeta("og:image", post.image, true);
     setMeta("og:type", "article", true);
-    setMeta("og:url", `https://hawaiipainters808.com/blog/${post.slug}`, true);
+    setMeta("og:url", `https://housepaintershonolulu.com/blog/${post.slug}`, true);
     setMeta("twitter:card", "summary_large_image");
     setMeta("twitter:title", post.title);
     setMeta("twitter:description", post.excerpt);
 
     let canonical = document.querySelector("link[rel='canonical']") as HTMLLinkElement | null;
     if (!canonical) { canonical = document.createElement("link"); canonical.setAttribute("rel", "canonical"); document.head.appendChild(canonical); }
-    canonical.setAttribute("href", `https://hawaiipainters808.com/blog/${post.slug}`);
+    canonical.setAttribute("href", `https://housepaintershonolulu.com/blog/${post.slug}`);
 
     const schemaId = "schema-blog-post";
     document.getElementById(schemaId)?.remove();
@@ -50,7 +50,7 @@ export default function BlogPostPage({ slug }: { slug?: string }) {
       "dateModified": post.date,
       "author": { "@type": "Person", "name": "Lopaka", "jobTitle": "Owner, Hawaii Painters 808" },
       "publisher": { "@type": "Organization", "name": "Hawaii Painters 808", "telephone": "+18082723816" },
-      "mainEntityOfPage": { "@type": "WebPage", "@id": `https://hawaiipainters808.com/blog/${post.slug}` }
+      "mainEntityOfPage": { "@type": "WebPage", "@id": `https://housepaintershonolulu.com/blog/${post.slug}` }
     });
     document.head.appendChild(s);
 

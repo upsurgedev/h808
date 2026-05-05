@@ -100,7 +100,7 @@ export default function PaintersAinaHainaPage() {
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", "https://hawaiipainters808.com/painters-aina-haina-hi");
+    canonical.setAttribute("href", "https://housepaintershonolulu.com/painters-aina-haina-hi");
 
     const schemaId = "schema-aina-haina";
     if (!document.getElementById(schemaId)) {
@@ -116,7 +116,7 @@ export default function PaintersAinaHainaPage() {
         "address": { "@type": "PostalAddress", "addressLocality": "Aina Haina", "addressRegion": "HI", "addressCountry": "US" },
         "areaServed": "Aina Haina, Kuliouou, Niu Valley, East Honolulu, Oahu, Hawaii",
         "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" }],
-        "url": "https://hawaiipainters808.com/painters-aina-haina-hi"
+        "url": "https://housepaintershonolulu.com/painters-aina-haina-hi"
       });
       document.head.appendChild(script);
     }
